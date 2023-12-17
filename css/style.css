@@ -19,6 +19,10 @@ body {
     padding-top: 50px;
   }
 
+  .li {
+    margin-left: 10px;
+  }
+
   /* Styling for the accordion */
   .accordion {
     max-width: 1000px;
@@ -82,7 +86,7 @@ body {
   
   .grid-text {
     /*some things I will add later*/
-    padding-left: 6px;
+    padding-left: 10px;
   }
 
   .grid-group {
