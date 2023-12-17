@@ -32,7 +32,7 @@ body {
     border-width: 3px;
   }
   .accordion-section {
-    border-bottom: 1px solid #f30000;
+    border-bottom: 1px solid black;
   }
   .accordion-section:last-child {
     border-bottom: none;
@@ -83,6 +83,7 @@ body {
   .grid-text {
     /*some things I will add later*/
     padding-left: 0px;
+    padding-bottom: 6px;
   }
 
   .grid-group {
