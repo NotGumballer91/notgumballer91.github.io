@@ -19,10 +19,6 @@ body {
     padding-top: 50px;
   }
 
-  .li {
-    margin-left: 10px;
-  }
-
   /* Styling for the accordion */
   .accordion {
     max-width: 1000px;
