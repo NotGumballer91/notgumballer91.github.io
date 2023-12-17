@@ -50,7 +50,7 @@ body {
     color: white;
   }
   .accordion-content {
-    max-height: 2000; /*change this to 0 when done debugging*/
+    max-height: 0; /*change this to 0 when done debugging*/
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     padding: 0px 5px;
