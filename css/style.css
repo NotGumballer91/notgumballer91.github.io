@@ -77,12 +77,12 @@ body {
     grid-template-rows: auto auto;
     grid-gap: 4px;
     padding: 10px;
-    text-align: left;
   }
   
   .grid-text {
     /*some things I will add later*/
     padding-left: 10px;
+    text-align: left;
   }
 
   .grid-group {
