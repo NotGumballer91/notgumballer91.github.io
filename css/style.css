@@ -85,6 +85,10 @@ body {
     text-align: left;
   }
 
+  .grid-text li {
+    margin-left: 20px; /* Or use padding-left: 20px; */
+  }
+
   .grid-group {
     padding-left: 10px;
     padding-right: 10px;
