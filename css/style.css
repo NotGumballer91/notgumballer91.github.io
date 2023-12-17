@@ -30,6 +30,10 @@ body {
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.5);
     border-width: 3px;
+    transition: background-color 0.2s ease;
+  }
+  .accordion:hover {
+    background-color: rgba(255,255,255,0.05);
   }
   .accordion-section {
     border-bottom: 1px solid #f30000;
@@ -46,7 +50,6 @@ body {
     outline: none;
     width: 100%;
     text-align: left;
-    transition: background-color 0.3s ease;
     color: white;
   }
   .accordion-content {
@@ -86,7 +89,7 @@ body {
   }
 
   .grid-text li {
-    margin-left: 20px; /* Or use padding-left: 20px; */
+    margin-left: 20px; /* I have NO IDEA why it's breaking the bullet point so it will do for now */
   }
 
   .grid-group {
