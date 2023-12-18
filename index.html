@@ -15,6 +15,8 @@
   <p><i>Made by Gumballer</i></p>
   <a href="https://www.pixiv.net/en/artworks/94558347" style="color:wheat"><i>BG Art by ゆき</i></a>
   <br>
+  <br>
+  <br>
   <div class="accordion"><!--Albedo-->
     <div class="accordion-section">
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/albedo.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto;"><h2>Albedo</h2></button>
@@ -531,9 +533,13 @@
               <h2>Elemental Skill</h2>
             </div>
             <div class="grid-text">
-              <p>Throws bombs and Creates mines</p>
-              <li>Mines can be pulled</li>
+              <p>Throws a bomb, Each bounce dealing Pyro DMG and Creating explosive mines after 3 bounces</p>
+              <li>Creates 8 Explosive mines</li>
+              <li>Explosive mines deals Pyro DMG</li>
+              <li>Explosive mines can be pulled</li>
+              <li>Explosive mines explodes on contact or expires</li>
               <p>Has 2 charges</p>
+              <p>Explosive Mine Duration: 15s</p>
               <p>CD: 20s</p>
             </div>
           </div>
@@ -545,7 +551,7 @@
             </div>
             <div class="grid-text">
               <p>Creates Clover, Dealing Pyro DMG to nearby enemies continuously</p>
-              <li>Does not work off-field</li>
+              <li>Switching Character ends the state</li>
               <p>Duration: 10s</p>
               <p>Energy Cost: 60</p>
               <p>CD: 15</p>
