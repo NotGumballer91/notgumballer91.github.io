@@ -29,7 +29,7 @@
               <h2>Normal Attack</h2>
             </div>
             <div class="grid-text">
-              <p>Performs 5 rapid attacks</p>
+              <p>Performs 5 attacks</p>
             </div>
           </div>
 
@@ -40,11 +40,12 @@
             </div>
             <div class="grid-text">
               <p>Creates <b>Solar Isotoma:</b></p>
-              <p>Any enemy within the field takes damage, Deals Geo DMG based on Albedo's DEF (Transient Blossom)</p>
+              <p>Any enemy within the field takes damage, Deals Geo DMG based on Albedo's DEF</p>
+              <p><b>Solar Isotoma</b></p>
                 <li>Procs every 2 seconds</li>
                 <li>Can be aimed if held</li>
                 <li>If stood on the platform, Lifts up the character a certain height</li>
-                <li>Solar Isotoma can be destroyed</li>
+                <li>Can be destroyed</li>
               <p>Duration: 30s</p>
               <p>CD: 4s</p>
             </div>
@@ -57,7 +58,7 @@
             </div>
             <div class="grid-text">
               <p>Deals AoE Geo DMG based on Albedo's ATK</p>
-              <li>If Solartoma is present, It will proc 7 more times</li>
+              <li>If Solar Isotoma is present, Burst procs 7 times</li>
               <p>Energy Cost: 40</p>
               <p>CD: 12s</p>
             </div>
@@ -100,7 +101,7 @@
               <h2>Normal Attack</h2>
             </div>
             <div class="grid-text">
-              <p>Performs 5 rapid attacks</p>
+              <p>Performs 5 attacks</p>
             </div>
           </div>
 
@@ -110,12 +111,13 @@
               <h2>Elemental Skill</h2>
             </div>
             <div class="grid-text">
-              <p>Creates 1 Chisel Light-Mirror, Grants Dendro Infusion and Projection Attacks</p>
+              <p>Creates 1 Chisel Light-Mirror. Mirrors grants Dendro Infusion and Projection Attacks</p>
+              <p>Holding mode allows aimed short-teleport</p>
               <p><b>Chisel Light-Mirror:</b></p>
-              <p>Grants Dendro Infusion</p>
-              <li>If there are no Mirrors on cast, Creates 2 Mirrors</li>
-              <li>Can aim and teleport by Holding skill</li>
+              <li>Creates 2 Mirrors if no Mirrors exists on cast</li>
+              <li>Switching characters expires all current Mirrors</li>
               <p>Mirror Duration: 4s</p>
+              <p>Max Mirrors: 3</p>
               <p><b>Projection Attacks:</b></p>
               <p>Deals Dendro DMG alongside of Normal Attack. DMG depends on the number of Mirrors present</p>
               <li>1 Mirror: Deals 1x Dendro DMG based on ATK and EM</li>
@@ -132,10 +134,11 @@
               <h2>Elemental Burst</h2>
             </div>
             <div class="grid-text">
-              <p>Consumes current Mirrors and creates Dendro Damaging AoE Field. Duration depends on the number of Mirrors consumed</p>
+              <p>Consumes current Mirrors and creates Dendro Damaging AoE Field</p>
+              <p>Burst depends on the number of Mirrors consumed</p>
               <li>Instances are 4/6/8/10 if 0/1/2/3 Mirrors consumed</li>
-              <p>2 seconds after Burst:</p>
-              <li>Creates 3/2/1/0 Mirrors if 0/1/2/3 Mirror were consumed</li>
+              <p>Creates mirrors based on mirrors consumed 2s after Burst</p>
+              <li>Creates 3/2/1/0 Mirrors if 0/1/2/3 Mirrors consumed</li>
               <p>Energy Cost: 70</p>
               <p>CD: 18s</p>
             </div>
@@ -180,7 +183,7 @@
               <h2>Normal Attack</h2>
             </div>
             <div class="grid-text">
-              <p>Performs 5 rapid attacks</p>
+              <p>Performs 5 attacks</p>
               <p>Charged attacks does multiple slashes</p>
               <li>Deals 3 instances</li>
               <p>Charged attack has medium range</p>
@@ -210,7 +213,6 @@
             <div class="grid-text">
               <p>Summons Snowstorm Blade, cutting enemies and dealing AoE Cryo DMG over time</p>
               <li>Has 19 cutting instances</li>
-              <li>Can push enemies away</li>
               <p>Energy Cost: 80</p>
               <p>CD: 20s</p>
             </div>
@@ -222,10 +224,10 @@
               <h2>Alternative Sprint</h2>
             </div>
             <div class="grid-text">
-              <p>Toggles between Frozen Fog Cloak:</p>
+              <p>Sprinting toggles between Ice cloak and Grants Cryo Infusion when sprinting out</p>
               <li>Activation Stamina costs 10</li>
-              <li>Drains 10 stamina movement per second</li>
-              <p>Grants Cryo infusion</p>
+              <li>Drains stamina per movement</li>
+              <li>Can traverse on water</li>
               <p>Infusion Duration: 5s</p>
             </div>
           </div>
@@ -236,7 +238,7 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>After using Skill, Normal and Charged attacks deals 30% more damage</p>
+              <p>Using skill increases Normal/Charged attacks DMG by 30%</p>
               <p>Duration: 6s</p>
             </div>
           </div>
@@ -249,7 +251,7 @@
             <div class="grid-text">
               <p>Hitting enemies with Alt sprint:</p>
               <li>Restores 10 stamina</li>
-              <li>+18% Cryo DMG Bonus</li>
+              <li>Increases Cryo DMG Bonus by 18%</li>
             <p>Duration: 10s</p>
             </div>
           </div>
@@ -272,7 +274,7 @@
             </div>
             <div class="grid-text">
               <p>Performs 4 Dendro attacks</p>
-              <p>Normal attacks has melee range</p>
+              <p>Normal attacks short range</p>
             </div>
           </div>
 
@@ -282,9 +284,8 @@
               <h2>Elemental Skill</h2>
             </div>
             <div class="grid-text">
-              <p>Sends a Dendro attack, hitting 3 enemies</p>
+              <p>Sends a Dendro attack, hitting 3 enemies and returns to the owner</p>
               <p>Heals entire party based on Baizhu's Max HP upon return</p>
-              <p>Duration: 30s</p>
               <p>CD: 10s</p>
             </div>
           </div>
@@ -295,7 +296,8 @@
               <h2>Elemental Burst</h2>
             </div>
             <div class="grid-text">
-              <p>Generates a Dendro Shield that heals and attacks when it expires/shattered</p>
+              <p>Periodically generates a Dendro Shield that heals and deals Dendro DMG when it expires or shattered</p>
+              <li>Dendro Shield reduces Dendro DMG by 60%</li>
               <p>Shield Duration: 2.5s</p>
               <p>Duration: 14s</p>
               <p>Energy Cost: 80</p>
@@ -309,7 +311,7 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Baizhu gains the following effects:</p>
+              <p>Baizhu gains the respective effects under these conditions:</p>
               <li>Active character has less than 50% HP: 20% Healing Bonus</li>
               <li>Active character has more than 50% HP: 25% Dendro DMG Bonus</li>
               <br>
@@ -322,9 +324,9 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Baizhu's Shield increases active character's Dendro-reaction DMG for every Baizhu's 1000HP:</p>
-              <li>2% for Burning, Bloom, Hyperbloom and Burgeon (Max 100%)</li>
-              <li>0.8% for Aggravate and Spread (Max 40%)</li>
+              <p>Baizhu's Shield increases Active character's Dendro-reaction DMG for every Baizhu's 1000HP:</p>
+              <li>2% for Burning, Bloom, Hyperbloom and Burgeon (Max 100%/50000HP)</li>
+              <li>0.8% for Aggravate and Spread (Max 40%/50000HP)</li>
               <br>
             </div>
           </div>
@@ -346,7 +348,7 @@
               <h2>Normal Attack</h2>
             </div>
             <div class="grid-text">
-              <p>Performs 4 strikes</p>
+              <p>Performs 4 attacks</p>
             </div>
           </div>
 
@@ -356,7 +358,7 @@
               <h2>Elemental Skill</h2>
             </div>
             <div class="grid-text">
-              <p>Deals AoE Pyro DMG and Creates <b>Fiery Sanctum</b> Field:</p>
+              <p>Deals AoE Pyro DMG and Creates <b>Fiery Sanctum</b> Field</p>
               <p><b>Fiery Sanctum:</b></p>
               <p>Can be retrieved and deployed</p>
               <li>Field deals Pyro DMG when enemies taken DMG within the field</li>
@@ -380,6 +382,7 @@
               <li>Retrieves Fiery Sanctum and redeploys the field at the end of it</li>
               <li>Jumping cancels Blazing Lioness state</li>
               <li>Sprint-Jumping redeploys Fiery Sanctum immediately</li>
+              <li>Switching character expires it</li>
               <p>Duration: 4s</p>
               <p>Energy Cost: 70</p>
               <p>CD: 18s</p>
@@ -394,8 +397,8 @@
             <div class="grid-text">
               <p>Retrieving Fiery Sanctum through Skill/Burst:</p>
               <li>Dehya takes 60% less DMG from mitigation</li>
-              <li>Duration: 6s</p>
-              <li>CD: 2s</p>
+              <li>Duration: 6s</li>
+              <li>CD: 2s</li>
               <p>Deploying Fiery Sanctum:</p>
               <li>Increases Interrupt Resistance further</li>
               <li>CD: 18s</li>
@@ -450,8 +453,9 @@
             <div class="grid-text">
               <p>Creates Salon Members depending on current Arkhe Alignment</p>
               <li>Can toggle between Arkhe states</li>
+              <li>Allows Furina to walk on water</li>
               <p><b>Ousia:</b></p>
-              Creates 3 Sea Creatures, Attacks nearby enemies, Dealing Hydro DMG based on Furina's Max HP
+              Creates 3 Sea Creatures, Attacks nearby enemies/entities, Dealing Hydro DMG based on Furina's Max HP
               <li>Drains entire party's HP until 50%</li>
               <li>Sea Creatures DMG increases by 110%/120%/130%/140% for every 1/2/3/4 party member HP drained</li>
               <li>Sea Creatures follows your character</li>
@@ -471,8 +475,8 @@
             <div class="grid-text">
               <p>Grants the entire team Fanfare Points based on HP% change throughout the duration</p>
               <p>Fanfare points:</p>
-              <li>DMG Increase for every HP% change</li>
-              <li>Healing Bonus for every HP% change</li>
+              <li>Increases All DMG Bonus for every HP% change</li>
+              <li>Increases Healing Bonus for every HP% change</li>
               <p>Max Fanfare: 300</p>
               <p>Duration: 18s</p>
               <p>Energy Cost: 60</p>
@@ -486,7 +490,7 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Any healing besides Furina overflows, Heals entire party 2% of their Max HP</p>
+              <p>Any healing besides Furina overflows, Heals the entire party 2% of their Max HP</p>
               <p>Healing Interval: 2s</p>
               <p>Healing Duration: 4s</p>
             </div>
@@ -498,7 +502,7 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Every 1000HP Furina has:</p>
+              <p>For every 1000HP Furina has:</p>
               <li>Sea Creatures deals 0.7% more DMG (Max 28%/40000HP)</li>
               <li>Water Singer heals 0.4% faster (Max 16%/40000HP)</li>
               <br>
@@ -550,8 +554,9 @@
               <h2>Elemental Burst</h2>
             </div>
             <div class="grid-text">
-              <p>Creates Clover, Dealing Pyro DMG to nearby enemies continuously</p>
-              <li>Switching Character ends the state</li>
+              <p>Deals Pyro DMG to nearby enemies periodically</p>
+              <li>Burst attacks enemies automatically</li>
+              <li>Switching character expires it</li>
               <p>Duration: 10s</p>
               <p>Energy Cost: 60</p>
               <p>CD: 15</p>
@@ -564,10 +569,10 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Normal Attack and Skill has a 50% chance to enhance Charged Attack once:</p>
+              <p>Normal Attack and Skill has a 50% chance to enhance the next Charged Attack:</p>
               <li>Charged Attack deals 50% more DMG</li>
               <li>Charged Attack does not consume stamina</li>
-              <p>Duration: 30s</p>
+              <p>Enhance Duration: 30s</p>
               <p>CD: 5s</p>
             </div>
           </div>
@@ -599,7 +604,7 @@
               <h2>Normal Attack</h2>
             </div>
             <div class="grid-text">
-              <p>Performs 3 rapid attacks</p>
+              <p>Performs 3 attacks</p>
             </div>
           </div>
 
@@ -612,6 +617,7 @@
               <p>Deals 3 Hydro DMG states and enters 2 different states depending on the third attack:</p>
               <p>Using Normal Attack enters <b>Sword Dance</b></p>
               <li>Can continuously attack to deal Hydro DMG waves based on Max HP</li>
+              <li>Switching character character expires it</li>
               <p>Using Skill creates <b>Hydro Aura</b> around Nilou</p>
               <li>Applies Hydro to enemies periodically</li>
               <li>Works off-field</li>
@@ -715,7 +721,7 @@
               <li>Increased Interrupt Resistance and Immune to Electro-Charged reaction DMG</li>
               <li>Restores entire party's energy every hit</li>
               <li>Energy Restortion only restores 5 times and has 1s CD</li>
-              <li>Switching Characters ends the state</li>
+              <li>Switching characters expires it</li>
               <p>Musou Isshin Duration: 7s</p>
               <p>Resolve Stack Duration: 300s</p>
               <p>Max Resolve Stacks: 60</p>
@@ -767,10 +773,10 @@
             <div class="grid-text">
               <p>Performs 6 shots</p>
               <p>Charged shot applies <b>Riptide</b></p>
-              <p>Riptide effects acts different depending on states</p> 
+              <p>Riptide deals additional AoE Hydro DMG and acts different depending on states</p> 
               <p><b>Riptide:</b></p>
-              <li>Riptide Flash: Enemies hit with Charged Shot</li>
-              <li>Riptide Burst: Enemies killed with Riptide applies Riptide to other nearby enemies</li>
+              <li>Enemies with Riptide takes additional AoE Hydro DMG from Charged Shot (Riptide Flash)</li>
+              <li>Enemies killed with Riptide applies Riptide to nearby enemies (Riptide Burst)</li>
               <p>Riptide Duration: 10s</p>
               <br>
             </div>
@@ -782,11 +788,13 @@
               <h2>Elemental Skill</h2>
             </div>
             <div class="grid-text">
-              <p>Switches into Melee stance:</p>
+              <p>Toggles between Ranged and Melee stance</p>
+              <p><b>Melee stance:</b></p>
               <li>Performs 6 attacks</li>
               <li>Normal attacks deals Hydro DMG</li>
-              <li>Enemies hit with Riptide takes additional <b>Riptide Slash</b> DMG</li>
+              <li>Enemies hit with Riptide takes additional AoE Hydro DMG (Riptide Slash)</li>
               <li>CD depends how long you've been in the Melee stance</li>
+              <li>Switching character cancels Melee stance</li>
               <p>Duration: 30s</p>
               <p>CD: 6-36s</p>
               <p>Max CD: 45s</p>
@@ -801,10 +809,10 @@
             <div class="grid-text">
               <p>Deals Hydro AoE DMG depending on stance</p>
               <p>Melee stance:</p>
-              <li>Performs huge AoE Hydro DMG around Tartaglia</li>
-              <li>Enemies hit with Riptide takes additional <b>Riptide Blast</b> DMG</li>
+              <li>Deals huge AoE Hydro DMG around Tartaglia</li>
+              <li>Enemies hit with Riptide takes additional AoE Hydro DMG (Riptide Blast)</li>
               <p>Ranged stance:</p>
-              <li>Deals Hydro AoE DMG in front of Tartaglia</li>
+              <li>Deals Hydro AoE DMG</li>
               <li>Applies <b>Riptide</b> status</li>
               <li>Returns 20 Energy</li>
               <p>Energy Cost: 60</p>
@@ -828,10 +836,7 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>During Melee stance, the following applies Riptide to enemies:</p>
-              <li>Crit Hit</li>
-              <li>Normal Attack</li>
-              <li>Charged Attack</li>
+              <p>In Melee stance, Crit Hit/Normal/Charged Attacks applies Riptide to enemies</p>
               <br>
             </div>
           </div>
@@ -868,9 +873,9 @@
               <p>Running out of stamina ends state</p>
               <p><b>Windfavored:</b></p>
               <li>Grants flight</li>
+              <li>Drains stamina passively</li>
               <li>Normal/Charged Attacks deals additional Anemo DMG</li>
               <li>Charged Attack does not consume stamina</li>
-              <li>Drains stamina passively</li>
               <li>Sprinting and ascending consumes more stamina</li>
               <p>Windfavored Stamina: 100</p>
               <p>CD: 6s</p>
@@ -883,7 +888,7 @@
               <h2>Elemental Burst</h2>
             </div>
             <div class="grid-text">
-              <p>Deals AoE Anemo DMG in front of Wanderer</p>
+              <p>Deals AoE Anemo DMG</p>
               <li>Has 5 instances</li>
               <li>Casting Burst during Windfavored ends the state</li>
               <p>Energy Cost: 60</p>
@@ -916,7 +921,7 @@
               <li>Fires 4 wind arrows, dealing 35% Anemo DMG 35% of ATK each</li>
               <li>Increases chance by 12% when charge is not gained</li>
               <li>Charge does not consume Windfavored stamina</li>
-              <p>Use sprint to use the charge during Windfavored state</p>
+              <li>Using sprint consumes the charge</li>
               <br>
             </div>
           </div>
