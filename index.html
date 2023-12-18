@@ -572,7 +572,7 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Crit Charged Attack restores 2 Energy all party members</p>
+              <p>Crit Charged Attack restores 2 Energy to all party members</p>
             </div>
           </div>
 
@@ -603,11 +603,12 @@
               <h2>Elemental Skill</h2>
             </div>
             <div class="grid-text">
-              <p>Deal 3 Hydro DMG states and enters 2 different states depending on the third attack:</p>
+              <p>Deals 3 Hydro DMG states and enters 2 different states depending on the third attack:</p>
               <p>Using Normal Attack enters <b>Sword Dance</b></p>
               <li>Can continuously attack to deal Hydro DMG waves based on Max HP</li>
               <p>Using Skill creates <b>Hydro Aura</b> around Nilou</p>
               <li>Applies Hydro to enemies periodically</li>
+              <li>Works off-field</li>
               <p>Sword Dance Duration: 8s</p>
               <p>Hydro Aura Duration: 12s</p>
               <p>CD: 18s</p>
@@ -652,6 +653,90 @@
             <div class="grid-text">
               <p>Increases Bountiful Cores DMG by 9% for every 1000HP above 30000HP Nilou's Max HP</p>
               <p>Max DMG Bonus: 400% (74444HP)</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion"><!--Raiden Shogun-->
+    <div class="accordion-section">
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/raiden.webp); background-position: 50% 22%; background-repeat: no-repeat; background-size: auto;"><h2>Raiden Shogun</h2></button>
+      <div class="accordion-content">
+        <div class="grid-container">
+          
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/na4.png" draggable="false">
+              <h2>Normal Attack</h2>
+            </div>
+            <div class="grid-text">
+              <p>Performs 5 attacks</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/raiden/e.webp" draggable="false">
+              <h2>Elemental Skill</h2>
+            </div>
+            <div class="grid-text">
+              <p>Deals AoE Electro DMG and Summons an Eye of Stormy Judgment for all party members</p>
+              <p><b>Eye of Stormy Judgment:</b></p>
+              <li>Deals coordinated Electro DMG attacks on every hit</li>
+              <li>Increases Elemental Burst DMG based on Energy Cost</li>
+              <p>Coordinated Attack Interval: 0.9s</p>
+              <li>Co-op party member's Coordinated Attacks only deals 20% DMG</li>
+              <p>Duration: 25s</p>
+              <p>CD: 10s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/raiden/q.webp" draggable="false">
+              <h2>Elemental Burst</h2>
+            </div>
+            <div class="grid-text">
+              <p>Consumes all <b>Resolve stacks</b> and enters <b>Musou Isshin</b> state, Dealing Huge Electro DMG</p>
+              <p><b>Resolve Stacks:</b></p>
+              <li>All Bursts except Raiden Shogun, gives Resolve Stacks based on their Energy consumed</li>
+              <li>Resolve Stacks increases Musou Isshin and Burst DMG</li>
+              <p><b>Musou Isshin:</b></p>
+              <li>Overrides All Normal Attacks with Electro DMG</li>
+              <li>Increased Interrupt Resistance and Immune to Electro-Charged reaction DMG</li>
+              <li>Restores entire party's energy every hit</li>
+              <li>Energy Restortion only restores 5 times and has 1s CD</li>
+              <p>Max Resolve Stacks: 60</p>
+              <p>Musou Isshin Duration: 7s</p>
+              <p>Resolve Stack Duration: 300s</p>
+              <p>Energy Cost: 90</p>
+              <p>CD: 18s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/raiden/a1.webp" draggable="false">
+              <h2>Ascension Passive 1</h2>
+            </div>
+            <div class="grid-text">
+              <p>Gaining Energy particles gives 2 Resolve Stacks</p>
+              <p>CD: 3s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/raiden/a4.webp" draggable="false">
+              <h2>Ascension Passive 4</h2>
+            </div>
+            <div class="grid-text">
+              <p>Every 1% above Raiden Shogun's 100% Energy Recharge grants:</p>
+              <li>Increases Energy Restoration during Musou Isshin by 0.6%</li>
+              <li>Increases Electro DMG Bonus by 0.4%</li>
             </div>
           </div>
 
