@@ -47,7 +47,7 @@ body {
     color: white;
   }
   .accordion:hover {
-    background-color: rgba(75, 75, 75, 0.5);
+    background-color: rgba(75, 75, 75, 0.4);
   }
   .accordion-content {
     max-height: 0; /*change this to 0 when done debugging*/
