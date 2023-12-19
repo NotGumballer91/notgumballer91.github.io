@@ -426,13 +426,13 @@
 
   <div class="accordion"><!--Dori-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/dori.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto;"><h2>Dori</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/dori.webp); background-position: 50% 30%; background-repeat: no-repeat; background-size: auto"><h2>Dori</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
           <div class="grid-group">
             <div class="grid-item">
-              <img src="/images/icons/na1-5.png" draggable="false">
+              <img src="/images/icons/na3.png" draggable="false">
               <h2>Normal Attack</h2>
             </div>
             <div class="grid-text">
@@ -442,44 +442,51 @@
 
           <div class="grid-group">
             <div class="grid-item">
-              <img src="/images/icons/character/e.webp" draggable="false">
+              <img src="/images/icons/dori/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
             </div>
             <div class="grid-text">
-              <p>Deals Electro DMG </p>
+              <p>Deals Electro DMG and deals another 2 instances of Electro DMG to nearby enemies</p>
               <p>CD: 9s</p>
             </div>
           </div>
 
           <div class="grid-group">
             <div class="grid-item">
-              <img src="/images/icons/character/q.webp" draggable="false">
+              <img src="/images/icons/dori/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
             </div>
             <div class="grid-text">
-              <p>Elemental Burst text here</p>
-              <p>Energy Cost: X</p>
-              <p>CD: X</p>
+              <p>Creates <b>Jinni</b></p>
+              <p><b>Jinni:</b></p>
+              <li>Connects to nearby characters</li>
+              <li>Heals connected characters based on Dori's Max HP</li>
+              <li>Restores Energy to connect characters</li>
+              <li>Connection deals Electro DMG to enemies on contact (Every 0.4s)</li>
+              <p>Energy Cost: 80</p>
+              <p>CD: 20s</p>
             </div>
           </div>
 
           <div class="grid-group">
             <div class="grid-item">
-              <img src="/images/icons/character/a1.webp" draggable="false">
+              <img src="/images/icons/dori/a1.webp" draggable="false">
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 1 text here</p>
+              <p>Characters connected to Jinni triggers a Electro-Reactions reduces CD of Dori's Skill by 1s</p>
+              <p>CD: 3s</p>
             </div>
           </div>
 
           <div class="grid-group">
             <div class="grid-item">
-              <img src="/images/icons/character/a4.webp" draggable="false">
+              <img src="/images/icons/dori/a4.webp" draggable="false">
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 4 text here</p>
+              <p>Hitting enemies with skill restores additional 5 Energy every 100% Energy Recharge Dori has</p>
+              <p>Max Energy Restorion: 15</p>
             </div>
           </div>
 
