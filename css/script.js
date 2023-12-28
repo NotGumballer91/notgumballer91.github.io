@@ -24,7 +24,14 @@ const wordsToColor = {
   'Cryo DMG': '#99FFFF',
   'Anemo DMG': '#80FFD7',
   'Dendro DMG': '#99FF88',
-  'Geo DMG': '#FFE699'
+  'Geo DMG': '#FFE699',
+  'Pyro Infusion': '#FF9999',
+  'Hydro Infusion': '#80C0FF',
+  'Electro Infusion': '#FFACFF',
+  'Cryo Infusion': '#99FFFF',
+  'Anemo Infusion': '#80FFD7',
+  'Dendro Infusion': '#99FF88',
+  'Geo Infusion': '#FFE699'
   
 };
 
