@@ -18,14 +18,6 @@ const elements = document.querySelectorAll('.accordion');
 
 // Colors for each elements
 const wordsToColor = {
-  'Pyro DMG': '#FF9999',
-  'Hydro DMG': '#80C0FF',
-  'Electro DMG': '#FFACFF',
-  'Cryo DMG': '#99FFFF',
-  'Anemo DMG': '#80FFD7',
-  'Dendro DMG': '#99FF88',
-  'Geo DMG': '#FFE699',
-
   'Pyro DMG Bonus': '#FF9999',
   'Hydro DMG Bonus': '#80C0FF',
   'Electro DMG Bonus': '#FFACFF',
@@ -33,6 +25,14 @@ const wordsToColor = {
   'Anemo DMG Bonus': '#80FFD7',
   'Dendro DMG Bonus': '#99FF88',
   'Geo DMG Bonus': '#FFE699',
+  
+  'Pyro DMG': '#FF9999',
+  'Hydro DMG': '#80C0FF',
+  'Electro DMG': '#FFACFF',
+  'Cryo DMG': '#99FFFF',
+  'Anemo DMG': '#80FFD7',
+  'Dendro DMG': '#99FF88',
+  'Geo DMG': '#FFE699',
 
   'Pyro Infusion': '#FF9999',
   'Hydro Infusion': '#80C0FF',
