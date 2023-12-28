@@ -48,10 +48,21 @@ const wordsToColor = {
 elements.forEach(element => {
   let text = element.innerHTML;
 
+  // Filter out elements with data-tooltips
+  const tooltips = element.querySelectorAll('[data-tooltip]');
+  tooltips.forEach(tooltip => {
+    text = text.replace(tooltip.outerHTML, `[${tooltips.indexOf(tooltip)}]`);
+  });
+
   // Look through each word and apply colors
   Object.entries(wordsToColor).forEach(([word, color]) => {
     const regex = new RegExp(`\\b${word}\\b`, 'gi');
     text = text.replace(regex, `<span style="color: ${color}; font-weight: bold">$&</span>`);
+  });
+
+  // Replace placeholders with original tooltip content
+  tooltips.forEach(tooltip => {
+    text = text.replace(`[${tooltips.indexOf(tooltip)}]`, tooltip.outerHTML);
   });
 
   element.innerHTML = text;
