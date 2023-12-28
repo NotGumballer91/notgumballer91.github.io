@@ -51,7 +51,8 @@ elements.forEach(element => {
   // Filter out elements with data-tooltips
   const tooltips = element.querySelectorAll('[data-tooltip]');
   tooltips.forEach(tooltip => {
-    text = text.replace(tooltip.outerHTML, `[${tooltips.indexOf(tooltip)}]`);
+    const index = Array.from(tooltips).indexOf(tooltip);
+    text = text.replace(tooltip.outerHTML, `[${index}]`);
   });
 
   // Look through each word and apply colors
@@ -62,11 +63,13 @@ elements.forEach(element => {
 
   // Replace placeholders with original tooltip content
   tooltips.forEach(tooltip => {
-    text = text.replace(`[${tooltips.indexOf(tooltip)}]`, tooltip.outerHTML);
+    const index = Array.from(tooltips).indexOf(tooltip);
+    text = text.replace(`[${index}]`, tooltip.outerHTML);
   });
 
   element.innerHTML = text;
 });
+
 
 // Function to cache accordions
 function getAccordionElements() {
