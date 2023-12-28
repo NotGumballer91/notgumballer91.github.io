@@ -50,7 +50,7 @@ body {
   }
   .accordion-content {
     max-height: 0; /*change this to 0 when done debugging*/
-    overflow: hidden;
+    overflow: visible;
     transition: max-height 0.3s ease-out;
     padding: 0px 5px;
     background-color: rgba(0, 0, 0, 0.2)
@@ -100,6 +100,7 @@ body {
   }
   
   .grid-item {
+    position: r;
     display: flex;
     align-items: center;
     padding: 0px;
@@ -147,6 +148,13 @@ body {
   color: rgb(125, 125, 125);
   font-size: 18px;
   transition: color 0.3s ease;
+  z-index: 5;
+}
+
+.hover-icon:hover {
+  color: rgb(175, 175, 175);
+  background-color: rgba(25, 25, 25, 0.8);
+  z-index: 2;
 }
 
 /* Tooltip text style */
