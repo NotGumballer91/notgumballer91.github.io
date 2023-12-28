@@ -1,4 +1,4 @@
-// JavaScript to handle accordion functionality
+// Accordion functionality
 function toggleAccordion(section) {
   const content = section.nextElementSibling;
   const isActive = section.parentElement.classList.contains('active');
@@ -41,11 +41,16 @@ elements.forEach(element => {
   element.innerHTML = text;
 });
 
-// Function to handle the search functionality
+// Function to cache accordions
+function getAccordionElements() {
+  return document.querySelectorAll('.accordion');
+}
+
+// Search functionality
 function searchCharacters() {
+  const accordions = getAccordionElements();
   const searchInput = document.getElementById('searchInput');
   const filter = searchInput.value.trim().toUpperCase();
-  const accordions = document.querySelectorAll('.accordion');
 
   accordions.forEach((accordion) => {
     const characterName = accordion.querySelector('.accordion-title').innerText.toUpperCase();
@@ -66,6 +71,5 @@ function searchCharacters() {
   });
 }
 
-
-// Event listener for the search input field
+// Search input field
 document.getElementById('searchInput').addEventListener('input', searchCharacters);
