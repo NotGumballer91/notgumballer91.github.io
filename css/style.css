@@ -30,13 +30,12 @@ body {
     border-style: solid;
     border-color: rgba(255,255, 255, 0.9);
     border-width: 3px;
-    transition: background-color 0.2s ease;
   }
   .accordion-section:last-child {
     border-bottom: none;
   }
   .accordion-title {
-    background-color: rgba(25, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     font-size: 16px;
     padding: 15px 20px;
     border: none;
@@ -45,9 +44,10 @@ body {
     width: 100%;
     text-align: left;
     color: white;
+    transition: background-color 0.2s ease;
   }
-  .accordion:hover {
-    background-color: rgba(75, 75, 75, 0.4);
+  .accordion-title:hover {
+    background-color: rgba(155, 155, 155, 0.4);
   }
   .accordion-content {
     max-height: 0; /*change this to 0 when done debugging*/
@@ -119,3 +119,20 @@ body {
     margin-right: 10px;
     align-items: center;
   }
+
+/* For the search input */
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Placeholder text style */
+#searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
