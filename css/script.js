@@ -25,6 +25,15 @@ const wordsToColor = {
   'Anemo DMG': '#80FFD7',
   'Dendro DMG': '#99FF88',
   'Geo DMG': '#FFE699',
+
+  'Pyro DMG Bonus': '#FF9999',
+  'Hydro DMG Bonus': '#80C0FF',
+  'Electro DMG Bonus': '#FFACFF',
+  'Cryo DMG Bonus': '#99FFFF',
+  'Anemo DMG Bonus': '#80FFD7',
+  'Dendro DMG Bonus': '#99FF88',
+  'Geo DMG Bonus': '#FFE699',
+
   'Pyro Infusion': '#FF9999',
   'Hydro Infusion': '#80C0FF',
   'Electro Infusion': '#FFACFF',
