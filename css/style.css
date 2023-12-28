@@ -1,4 +1,3 @@
-/* Basic styling */
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(bg.jpg);
     background-position: center;
@@ -120,7 +119,7 @@ body {
     align-items: center;
   }
 
-/* For the search input */
+/* Search input style */
 #searchInput {
   width: 300px;
   padding: 10px;
@@ -132,12 +131,11 @@ body {
   color: white;
 }
 
-/* Placeholder text style */
 #searchInput::placeholder {
   color: rgba(255, 255, 255, 0.2);
 }
 
-/* New class for the hover icon */
+/* Hover icon's style */
 .hover-icon {
   position: relative;
   display: inline-block;
@@ -148,16 +146,17 @@ body {
   margin-left: 2%;
   color: rgb(125, 125, 125);
   font-size: 18px;
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-/* Tooltip text on hover */
+/* Tooltip text style */
 .hover-icon::before {
   content: attr(data-tooltip);
   position: absolute;
-  top: -40px;
+  text-align: left;
+  bottom: 100%; /* Position above the icon */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-8px); /* Fixed offset */
   padding: 8px 12px;
   background-color: rgba(10, 10, 10, 0.9);
   color: rgb(200, 200, 200);
@@ -166,16 +165,11 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
-  white-space: nowrap;
+  white-space: pre;
+  z-index: 999;
 }
 
 /* Show tooltip on hover */
 .hover-icon:hover::before {
   opacity: 1;
-}
-
-/* Change icon color and background on hover */
-.hover-icon:hover {
-  color: rgb(200, 200, 200);
-  background-color: rgba(75, 75, 75, 0.6);
 }
