@@ -26,7 +26,7 @@
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/albedo.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto;"><h2>Albedo</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
-          
+
           <div class="grid-group">
             <div class="grid-item">
               <img src="/images/icons/na1.png" draggable="false">
@@ -41,14 +41,20 @@
             <div class="grid-item">
               <img src="/images/icons/albedo/Skill_S_Albedo_01.webp" draggable="false">
               <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Deals 25% more DMG to Half-HP enemies">A1</span>
+              <span class="hover-icon" data-tooltip="Generates 1.2 Energy for Albedo every proc">C1</span>
+              <span class="hover-icon" data-tooltip="Each proc charges increases Burst DMG by 30% of Albedo's DEF&#010;Max Charges: 4">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Characters within the field deals 30% more Plunge Attack DMG">C4</span>
+              <span class="hover-icon" data-tooltip="All Characters within the field with Crystallize Shield deals 17% more DMG">C6</span>
             </div>
             <div class="grid-text">
               <p>Creates <b>Solar Isotoma:</b></p>
-              <p>Any enemy within the field takes damage, Deals Geo DMG based on Albedo's DEF</p>
+              <p>Enemy within the field takes DMG, Deals Geo DMG based on Albedo's DEF</p>
               <p><b>Solar Isotoma</b></p>
-                <li>Procs every 2 seconds</li>
+                <li>Procs every 2s</li>
                 <li>Can be aimed if held</li>
-                <li>If stood on the platform, Lifts up the character a certain height</li>
+                <li>If stood on the platform, Lifts up the character slightly</li>
                 <li>Can be destroyed</li>
               <p>Duration: 30s</p>
               <p>CD: 4s</p>
@@ -59,6 +65,9 @@
             <div class="grid-item">
               <img src="/images/icons/albedo/Skill_E_Albedo_01.webp" draggable="false">
               <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Grants 125 EM to all party members on cast">A4</span>
+              <span class="hover-icon" data-tooltip="Increases Burst DMG by based on Skill proc charges">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
               <p>Deals AoE Geo DMG based on Albedo's ATK</p>
@@ -103,6 +112,7 @@
             <div class="grid-item">
               <img src="/images/icons/na1.png" draggable="false">
               <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="Grants 1 Mirror on Charged/Plunge Attack Hit">A1</span>
             </div>
             <div class="grid-text">
               <p>Performs 5 attacks</p>
@@ -113,6 +123,11 @@
             <div class="grid-item">
               <img src="/images/icons/alhaitham/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Increases Projection Attack based on EM">A4</span>
+              <span class="hover-icon" data-tooltip="Decreases CD by 1.2s every Projection Attack hits">C1</span>
+              <span class="hover-icon" data-tooltip="Each Mirror generation increases Alhaitham's EM by 50 for 8s (Independent)&#010;Works even on Max Mirrors&#010;Max Stacks: 4 (250 EM)">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Max Mirror increases Crit Rate/DMG 10%/70% for 6s&#010;Can be extended by 6s reaching Max Mirrors again">C6</span>
             </div>
             <div class="grid-text">
               <p>Creates 1 Chisel Light-Mirror. Mirrors grants Dendro Infusion and <b>Projection Attacks</b></p>
@@ -136,6 +151,10 @@
             <div class="grid-item">
               <img src="/images/icons/alhaitham/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Increases Burst DMG based on EM">A4</span>
+              <span class="hover-icon" data-tooltip="On cast, Increases stats based on Mirror change:&#010;Grants 30 EM to other party members per Mirror consumed&#010;Alhaitham gains 10% Dendro DMG per Mirror generated&#010;Duration: 15s&#010;Effect restarts if cast again">C4</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span> 
+              <span class="hover-icon" data-tooltip="On cast, Generates 3 Mirrors regardless of Mirrors consumed">C6</span>
             </div>
             <div class="grid-text">
               <p>Consumes current Mirrors and creates an AoE Field that deals Dendro DMG over time</p>
@@ -180,11 +199,14 @@
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/ayaka.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto;"><h2>Ayaka</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
-          
           <div class="grid-group">
             <div class="grid-item">
               <img src="/images/icons/na1.png" draggable="false">
               <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="Gains Cryo Infusion on sprint">AS</span>
+              <span class="hover-icon" data-tooltip="On Skill cast, Increases Normal/Charged Attack DMG by 30%">A1</span>
+              <span class="hover-icon" data-tooltip="Cryo Infused Normal/Charged Attacks has a 50% chance to reduce Skill CD by 0.3s">C1</span>
+              <span class="hover-icon" data-tooltip="Every 10s, Increases Ayaka's Charged Attack DMG by 298%&#010;On hit, The effect resets">C6</span>
             </div>
             <div class="grid-text">
               <p>Performs 5 attacks</p>
@@ -200,6 +222,7 @@
             <div class="grid-item">
               <img src="/images/icons/ayaka/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
               <p>Deals Cryo DMG in AoE</p>
@@ -213,6 +236,9 @@
             <div class="grid-item">
               <img src="/images/icons/ayaka/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Summons 2 additional smaller Snowstorm Blades&#010;Deals 20% of the original DMG">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="On hit, Decreases targets DEF by 30% for 6s">C4</span>
             </div>
             <div class="grid-text">
               <p>Summons Snowstorm Blade, cutting enemies and dealing AoE Cryo DMG over time</p>
@@ -226,9 +252,10 @@
             <div class="grid-item">
               <img src="/images/icons/ayaka/a.webp" draggable="false">
               <h2>Alternative Sprint</h2>
+              <span class="hover-icon" data-tooltip="On hit, Grants 18% Cryo DMG Bonus and 10 Stamina">A4</span>
             </div>
             <div class="grid-text">
-              <p>Sprinting toggles between Ice cloak and Grants Cryo Infusion when sprinting out</p>
+              <p>Sprinting toggles between Ice cloak and Gains Cryo Infusion when sprinting out</p>
               <li>Activation Stamina costs 10</li>
               <li>Drains stamina per movement</li>
               <li>Can traverse on water</li>
@@ -287,6 +314,9 @@
             <div class="grid-item">
               <img src="/images/icons/baizhu/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Grants 1 additional charge">C1</span>
+              <span class="hover-icon" data-tooltip="Active (own party members) character hits procs Baizhu's Skill every 5s&#010;Deals 250% of Baizhu's ATK, Heals 20% of Skill">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
               <p>Sends a Dendro DMG attack, hitting 3 enemies and returns</p>
@@ -299,9 +329,12 @@
             <div class="grid-item">
               <img src="/images/icons/baizhu/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="On cast, Grants 80 EM to all party members for 15s">C4</span>
+              <span class="hover-icon" data-tooltip="Increases Shield DMG by 8% of Baizhu's Max HP&#010;On Skill hit and return, Generates a Dendro Shield (Only once per Skill cast and return)">C6</span>
             </div>
             <div class="grid-text">
-              <p>Periodically generates a Dendro Shield that heals and deals Dendro DMG when it expires/shatters</p>
+              <p>Periodically generates a Dendro Shield that heals and dealing Dendro DMG when it expires/shatters</p>
               <li>Dendro Shield reduces Incoming Dendro DMG by 60%</li>
               <p>Shield Duration: 2.5s</p>
               <p>Duration: 14s</p>
@@ -361,6 +394,10 @@
             <div class="grid-item">
               <img src="/images/icons/dehya/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Increases Mitigation and Interrupt Resistance">A1</span>
+              <span class="hover-icon" data-tooltip="Increases Skill DMG by 6% of Max HP">C1</span>
+              <span class="hover-icon" data-tooltip="Characters damaged within the field increases the next Field DMG by 50%">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
               <p>Deals AoE Pyro DMG and Creates <b>Fiery Sanctum</b> Field</p>
@@ -379,6 +416,11 @@
             <div class="grid-item">
               <img src="/images/icons/dehya/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Increases Max HP 20%&#010;Increases Burst DMG by 6% of Max HP">C1</span>
+              <span class="hover-icon" data-tooltip="Using Burst to redeploy the field extends the field duration by 6s&#010">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="On hit, Restores 1.5 Energy and 2.5% Max HP for Dehya (Procs every 0.2s)">C4</span>
+              <span class="hover-icon" data-tooltip="Increases Burst Crit Rate by 10%&#010;Burst hits increases Crit DMG 15% and duration by 0.5s (Procs every 0.2s)&#010;Max Crit DMG/Duration is 60%/2s respectively">C6</span>
             </div>
             <div class="grid-text">
               <p>Enters Blazing Lioness state, Dealing consecutive Pyro DMG based on Dehya's ATK + Max HP</b></p>
@@ -439,6 +481,7 @@
             <div class="grid-item">
               <img src="/images/icons/na3.png" draggable="false">
               <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="On Skill cast, Gains Electro Infusion that heals on hit">C6</span>
             </div>
             <div class="grid-text">
               <p>Performs 3 attacks</p>
@@ -449,6 +492,9 @@
             <div class="grid-item">
               <img src="/images/icons/dori/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Adds 1 additional instance">C1</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
+              <span class="hover-icon" data-tooltip="On cast, Gains Electro Infusion&#010;On Normal Attack hit, Heals entire party by 4% of Dori's Max HP&#010;Duration: 3s">C6</span>
             </div>
             <div class="grid-text">
               <p>Deals Electro DMG and deals another 2 instances of Electro DMG to nearby enemies</p>
@@ -460,6 +506,9 @@
             <div class="grid-item">
               <img src="/images/icons/dori/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Connected Characters to Jinni periodically deals DMG 50% of Dori's ATK">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Connected Characters to Jinni gains 50% Incoming Healing Bonus/30% Energy Recharge if under 50% HP/Energy respectively">C4</span>
             </div>
             <div class="grid-text">
               <p>Creates <b>Jinni</b></p>
@@ -490,7 +539,7 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Hitting enemies with skill restores additional 5 Energy every 100% Energy Recharge Dori has</p>
+              <p>On Skill hit, Restores additional 5 Energy every 100% Energy Recharge Dori has</p>
               <p>Max Energy Restorion: 15</p>
             </div>
           </div>
@@ -510,6 +559,7 @@
             <div class="grid-item">
               <img src="/images/icons/na1.png" draggable="false">
               <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="On Skill cast, Gains Hydro Infusion and Deals Hydro DMG based on Furina's Max HP&#010;Additional buffs depends on the current Arhke Alignment">C6</span>
             </div>
             <div class="grid-text">
               <p>Performs 4 attacks</p>
@@ -525,9 +575,13 @@
             <div class="grid-item">
               <img src="/images/icons/furina/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Increases Salon Members DMG/Heal Interval based on Furina's Max HP">A4</span>
+              <span class="hover-icon" data-tooltip="Restores 4 Energy to Furina from either Salon Members does DMG/Heal every 5s">C4</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
+              <span class="hover-icon" data-tooltip="On cast, Gains Hydro Infusion that deals 18% of Furina's Max HP for 10s&#010;Grants additional buffs from each hit depending on current Arkhe Alignment:&#010;&#010;Ousia:&#010;Heals all party members by 4% of Furina's Max HP for 2.9s (Can be extended)&#010;&#010;Pneuma:&#010;Consumes 1% of entire party's current HP and Deals 25% further DMG based on Furina's Max HP&#010;&#010;Max hits: 6">C6</span>
             </div>
             <div class="grid-text">
-              <p>Creates Salon Members depending on current Arkhe Alignment</p>
+              <p>Creates Salon Members. Effects depending on current Arkhe Alignment</p>
               <li>Can toggle between Arkhe states</li>
               <li>Allows Furina to walk on water</li>
               <p><b>Ousia:</b></p>
@@ -547,6 +601,9 @@
             <div class="grid-item">
               <img src="/images/icons/furina/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Increases Max Fanfare by 100&#010;On cast, Starts with 100 Fanfare stacks">C1</span>
+              <span class="hover-icon" data-tooltip="Increases Fanfare gain from HP% change by 250%&#010;Each Fanfare stacks increases Furina's Max HP by 0.35% (Max 140%)">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
             </div>
             <div class="grid-text">
               <p>Grants the entire team Fanfare Points based on HP% change throughout the duration</p>
@@ -600,6 +657,9 @@
             <div class="grid-item">
               <img src="/images/icons/na5.png" draggable="false">
               <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="Each hit has a chance to grant one Charged Attack&#010;that uses no stamina and deals more DMG">A1</span>
+              <span class="hover-icon" data-tooltip="A Crit Charged Attack restores energy to all party members">A4</span>
+              <span class="hover-icon" data-tooltip="Each hit has a chance to deal one spark of Burst DMG">C1</span>
             </div>
             <div class="grid-text">
               <p>Performs 3 Pyro attacks</p>
@@ -611,6 +671,10 @@
             <div class="grid-item">
               <img src="/images/icons/klee/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Each hit has a chance to grant one Charged Attack&#010;that uses no stamina and deals more DMG">A1</span>
+              <span class="hover-icon" data-tooltip="Each hit has a chance to deal one spark of Burst DMG">C1</span>
+              <span class="hover-icon" data-tooltip="Decreases enemies DEF by 23% on hit">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
             </div>
             <div class="grid-text">
               <p>Throws a bomb, Each bounce dealing Pyro DMG and Creating explosive mines after 3 bounces</p>
@@ -628,6 +692,10 @@
             <div class="grid-item">
               <img src="/images/icons/klee/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Each hit from Attacks/Skill has a chance to proc one coordinated&#010;attack that deals 120% of Burst DMG">C1</span>
+              <span class="hover-icon" data-tooltip="Switching characters during Burst deals AoE Pyro DMG&#010;Deals 555% of Klee's ATK">C4</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
+              <span class="hover-icon" data-tooltip="On cast, All party members gains 10% Pyro DMG Bonus for 25s&#010;Restores 3 Energy to all party members every 3s (except Klee)">C6</span>
             </div>
             <div class="grid-text">
               <p>Deals Pyro DMG to nearby enemies periodically</p>
@@ -678,6 +746,7 @@
             <div class="grid-item">
               <img src="/images/icons/na3.png" draggable="false">
               <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="On Skill cast, Gains Geo Infusion and increases DMG">A1</span>
             </div>
             <div class="grid-text">
               <p>Performs 4 attacks</p>
@@ -688,19 +757,22 @@
             <div class="grid-item">
               <img src="/images/icons/navia/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="On hit, Each charge restores 3 energy to Navia (Max 9 energy)&#010;And decreases Burst CD by 1s (Max 3s)">C1</span>
+              <span class="hover-icon" data-tooltip="Each charge increase skill Crit Rate by 12% (Max 36%)^#010;On hit, Deals one AoE instance of Burst DMG">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Each charge starting from 3, Increases skill Crit DMG by 45%&#010;All charges beyond 3 are refunded on cast">C6</span>
             </div>
             <div class="grid-text">
-              <p>Consumes all <b>Shrapnel Charges</b> and Deals Geo DMG. DMG is based on the amount of <b>Shrapnels Charges</b></p>
+              <p>Consumes all <b>Shrapnel Charges</b> and Deals Geo DMG. Increases DMG based on number of <b>Crystal Shrapnels</b></p>
               <p>Has 2 Charges</p>
               <p>Holding mode allows aiming and pulls nearby Crystallize Shards</p>
-              <p><b>Shrapnel Charges:</b></p>
+              <p><b>Crystal Shrapnels:</b></p>
               <li>Picking up Crystallize Shards grants 1 Shrapnel Charge</li>
               <li>Increases Shrapnel DMG by 15% every Charges starting from 3</li>
               <li>Deals 2x DMG If all Shrapnels connects</li>
               <p>Also Deals Ousia-aligned Geo DMG (CD: 7s)</p>
               <p>Max Shrapnels Charges: 6</p>
-              <p>Shrapnel Charge Duration: 300s</p>
-              <li>Gaining Shrapnel Charge resets duration</li>
+              <p>Crystal Shrapnels Duration: 300s</p>
               <p>CD: 9s</p>
             </div>
           </div>
@@ -709,6 +781,8 @@
             <div class="grid-item">
               <img src="/images/icons/navia/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="On skill hit, Deals one instance of Burst DMG">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
               <p>Deals AoE Geo DMG to nearby enemies periodically every 0.75s</p>
@@ -770,6 +844,7 @@
             <div class="grid-item">
               <img src="/images/icons/nilou/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Increases Hydro wave DMG by 65%&#010;Extends Hydro aura duration by 6s">C1</span>
             </div>
             <div class="grid-text">
               <p>Deals 3 Hydro DMG states and enters 2 different states depending on the third attack:</p>
@@ -802,6 +877,7 @@
             <div class="grid-item">
               <img src="/images/icons/nilou/a1.webp" draggable="false">
               <h2>Ascension Passive 1</h2>
+              <span class="hover-icon" data-tooltip="Dealing Hydro DMG decreases enemies Hydro RES by 35%">C2</span>
             </div>
             <div class="grid-text">
               <p>Only if all party members are Dendro or Hydro, Nilou's Skill state grants the following effects:</p>
