@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Genshin TL;DR</title>
 </head>
@@ -123,7 +125,7 @@
             <div class="grid-item">
               <img src="/images/icons/alhaitham/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Increases Projection Attack based on EM">A4</span>
+              <span class="hover-icon" data-tooltip="Increases Projection Attacks based on EM">A4</span>
               <span class="hover-icon" data-tooltip="Decreases CD by 1.2s every Projection Attack hits">C1</span>
               <span class="hover-icon" data-tooltip="Each Mirror generation increases Alhaitham's EM by 50 for 8s (Independent)&#010;Works even on Max Mirrors&#010;Max Stacks: 4 (250 EM)">C2</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
@@ -131,10 +133,10 @@
             </div>
             <div class="grid-text">
               <p>Creates 1 Chisel Light-Mirror. Mirrors grants Dendro Infusion and <b>Projection Attacks</b></p>
-              <p>Holding mode allows aimed short-teleport</p>
+              <p>Holding mode teleports to aimed location</p>
               <p><b>Chisel Light-Mirror:</b></p>
               <li>Creates 2 Mirrors if no Mirrors exists on cast</li>
-              <li>Switching characters expires all current Mirrors</li>
+              <li>Switching characters expires existing Mirrors</li>
               <p>Mirror Duration: 4s</p>
               <p>Max Mirrors: 3</p>
               <p><b>Projection Attacks:</b></p>
@@ -157,11 +159,10 @@
               <span class="hover-icon" data-tooltip="On cast, Generates 3 Mirrors regardless of Mirrors consumed">C6</span>
             </div>
             <div class="grid-text">
-              <p>Consumes current Mirrors and creates an AoE Field that deals Dendro DMG over time</p>
+              <p>Consumes current Mirrors and creates an AoE Field that deals Dendro DMG instances</p>
               <p>Burst depends on the number of Mirrors consumed</p>
-              <li>Instances are 4/6/8/10 every 0/1/2/3 Mirrors consumed</li>
-              <p>Creates mirrors based on mirrors consumed 2s after Burst</p>
-              <li>Creates 3/2/1/0 Mirrors every 0/1/2/3 Mirrors consumed</li>
+              <li>Deals 4/6/8/10 instances every 0/1/2/3 Mirrors consumed</li>
+              <li>Creates 3/2/1/0 Mirrors every 0/1/2/3 Mirrors consumed (Creates Mirrors 2s after Burst)</li>
               <p>Energy Cost: 70</p>
               <p>CD: 18s</p>
             </div>
@@ -186,104 +187,6 @@
             <div class="grid-text">
               <p>Increases Projection Attack and Burst DMG by 0.1% for every 1EM</p>
               <p>Max DMG Bonus: 100%/1000EM</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="accordion"><!--Ayaka-->
-    <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/ayaka.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto;"><h2>Ayaka</h2></button>
-      <div class="accordion-content">
-        <div class="grid-container">
-          <div class="grid-group">
-            <div class="grid-item">
-              <img src="/images/icons/na1.png" draggable="false">
-              <h2>Normal Attack</h2>
-              <span class="hover-icon" data-tooltip="Gains Cryo Infusion on sprint">AS</span>
-              <span class="hover-icon" data-tooltip="On Skill cast, Increases Normal/Charged Attack DMG by 30%">A1</span>
-              <span class="hover-icon" data-tooltip="Cryo Infused Normal/Charged Attacks has a 50% chance to reduce Skill CD by 0.3s">C1</span>
-              <span class="hover-icon" data-tooltip="Every 10s, Increases Ayaka's Charged Attack DMG by 298%&#010;On hit, The effect resets">C6</span>
-            </div>
-            <div class="grid-text">
-              <p>Performs 5 attacks</p>
-              <p>Charged attacks does multiple slashes</p>
-              <li>Deals 3 instances</li>
-              <p>Charged attack has medium range</p>
-              <li>Hits all enemies if within range</li>
-              <br>
-            </div>
-          </div>
-
-          <div class="grid-group">
-            <div class="grid-item">
-              <img src="/images/icons/ayaka/e.webp" draggable="false">
-              <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
-            </div>
-            <div class="grid-text">
-              <p>Deals Cryo DMG in AoE</p>
-              <li>Launches enemies upwards</li>
-              <li>Cannot launch heavy enemies</li>
-              <p>CD: 10s</p>
-            </div>
-          </div>
-
-          <div class="grid-group">
-            <div class="grid-item">
-              <img src="/images/icons/ayaka/q.webp" draggable="false">
-              <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="Summons 2 additional smaller Snowstorm Blades&#010;Deals 20% of the original DMG">C2</span>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
-              <span class="hover-icon" data-tooltip="On hit, Decreases targets DEF by 30% for 6s">C4</span>
-            </div>
-            <div class="grid-text">
-              <p>Summons Snowstorm Blade, cutting enemies and dealing AoE Cryo DMG over time</p>
-              <li>Has 19 cutting instances</li>
-              <p>Energy Cost: 80</p>
-              <p>CD: 20s</p>
-            </div>
-          </div>
-
-          <div class="grid-group">
-            <div class="grid-item">
-              <img src="/images/icons/ayaka/a.webp" draggable="false">
-              <h2>Alternative Sprint</h2>
-              <span class="hover-icon" data-tooltip="On hit, Grants 18% Cryo DMG Bonus and 10 Stamina">A4</span>
-            </div>
-            <div class="grid-text">
-              <p>Sprinting toggles between Ice cloak and Gains Cryo Infusion when sprinting out</p>
-              <li>Activation Stamina costs 10</li>
-              <li>Drains stamina per movement</li>
-              <li>Can traverse on water</li>
-              <p>Infusion Duration: 5s</p>
-            </div>
-          </div>
-
-          <div class="grid-group">
-            <div class="grid-item">
-              <img src="/images/icons/ayaka/a1.webp" draggable="false">
-              <h2>Ascension Passive 1</h2>
-            </div>
-            <div class="grid-text">
-              <p>Using skill increases Normal/Charged attacks DMG by 30%</p>
-              <p>Duration: 6s</p>
-            </div>
-          </div>
-
-          <div class="grid-group">
-            <div class="grid-item">
-              <img src="/images/icons/ayaka/a4.webp" draggable="false">
-              <h2>Ascension Passive 4</h2>
-            </div>
-            <div class="grid-text">
-              <p>Hitting enemies with Alt sprint:</p>
-              <li>Restores 10 stamina</li>
-              <li>Increases Cryo DMG Bonus by 18%</li>
-            <p>Duration: 10s</p>
             </div>
           </div>
 
@@ -362,7 +265,7 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Baizhu's Shield increases Active character's Dendro-reaction DMG for every Baizhu's 1000HP:</p>
+              <p>Baizhu's Shield increases Active character's Dendro-Reaction DMG for every Baizhu's 1000HP:</p>
               <li>2% for Burning, Bloom, Hyperbloom and Burgeon (Max 100%/50000HP)</li>
               <li>0.8% for Aggravate and Spread (Max 40%/50000HP)</li>
               <br>
@@ -396,7 +299,7 @@
               <h2>Elemental Skill</h2>
               <span class="hover-icon" data-tooltip="Increases Mitigation and Interrupt Resistance">A1</span>
               <span class="hover-icon" data-tooltip="Increases Skill DMG by 6% of Max HP">C1</span>
-              <span class="hover-icon" data-tooltip="Characters damaged within the field increases the next Field DMG by 50%">C2</span>
+              <span class="hover-icon" data-tooltip="Characters damaged within the field increases the Field's next DMG by 50%">C2</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
@@ -513,9 +416,9 @@
             <div class="grid-text">
               <p>Creates <b>Jinni</b></p>
               <p><b>Jinni:</b></p>
-              <li>Connects to nearby characters</li>
+              <li>Connects to all nearby characters</li>
               <li>Heals connected characters based on Dori's Max HP</li>
-              <li>Restores Energy to connect characters</li>
+              <li>Restores Energy to connected characters</li>
               <li>Connection deals Electro DMG to enemies on contact (Every 0.4s)</li>
               <p>Energy Cost: 80</p>
               <p>CD: 20s</p>
@@ -647,6 +550,104 @@
     </div>
   </div>
 
+  <div class="accordion"><!--Kamisato Ayaka-->
+    <div class="accordion-section">
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/ayaka.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto;"><h2>Kamisato Ayaka</h2></button>
+      <div class="accordion-content">
+        <div class="grid-container">
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/na1.png" draggable="false">
+              <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="Gains Cryo Infusion on sprint">AS</span>
+              <span class="hover-icon" data-tooltip="On Skill cast, Increases Normal/Charged Attack DMG by 30%">A1</span>
+              <span class="hover-icon" data-tooltip="Cryo Infused Normal/Charged Attacks has a 50% chance to reduce Skill CD by 0.3s">C1</span>
+              <span class="hover-icon" data-tooltip="Every 10s, Increases Ayaka's Charged Attack DMG by 298%&#010;On hit, The effect resets">C6</span>
+            </div>
+            <div class="grid-text">
+              <p>Performs 5 attacks</p>
+              <p>Charged attacks does multiple slashes</p>
+              <li>Deals 3 instances</li>
+              <p>Charged attack has medium range</p>
+              <li>Hits all enemies if within range</li>
+              <br>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/ayaka/e.webp" draggable="false">
+              <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
+            </div>
+            <div class="grid-text">
+              <p>Deals Cryo DMG in AoE</p>
+              <li>Launches enemies upwards</li>
+              <li>Cannot launch heavy enemies</li>
+              <p>CD: 10s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/ayaka/q.webp" draggable="false">
+              <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Summons 2 additional smaller Snowstorm Blades&#010;Deals 20% of the original DMG">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="On hit, Decreases targets DEF by 30% for 6s">C4</span>
+            </div>
+            <div class="grid-text">
+              <p>Summons Snowstorm Blade, cutting enemies and dealing AoE Cryo DMG over time</p>
+              <li>Has 19 cutting instances</li>
+              <p>Energy Cost: 80</p>
+              <p>CD: 20s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/ayaka/a.webp" draggable="false">
+              <h2>Alternative Sprint</h2>
+              <span class="hover-icon" data-tooltip="On hit, Grants 18% Cryo DMG Bonus and 10 Stamina">A4</span>
+            </div>
+            <div class="grid-text">
+              <p>Sprinting toggles between Ice cloak and Gains Cryo Infusion when sprinting out</p>
+              <li>Activation Stamina costs 10</li>
+              <li>Drains stamina per movement</li>
+              <li>Can traverse on water</li>
+              <p>Infusion Duration: 5s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/ayaka/a1.webp" draggable="false">
+              <h2>Ascension Passive 1</h2>
+            </div>
+            <div class="grid-text">
+              <p>Using skill increases Normal/Charged attacks DMG by 30%</p>
+              <p>Duration: 6s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="/images/icons/ayaka/a4.webp" draggable="false">
+              <h2>Ascension Passive 4</h2>
+            </div>
+            <div class="grid-text">
+              <p>Hitting enemies with Alt sprint:</p>
+              <li>Restores 10 stamina</li>
+              <li>Increases Cryo DMG Bonus by 18%</li>
+            <p>Duration: 10s</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="accordion"><!--Klee-->
     <div class="accordion-section">
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/klee.webp); background-position: 50% 40%; background-repeat: no-repeat; background-size: auto;"><h2>Klee</h2></button>
@@ -657,9 +658,9 @@
             <div class="grid-item">
               <img src="/images/icons/na5.png" draggable="false">
               <h2>Normal Attack</h2>
-              <span class="hover-icon" data-tooltip="Each hit has a chance to grant one Charged Attack&#010;that uses no stamina and deals more DMG">A1</span>
+              <span class="hover-icon" data-tooltip="Each hit has a chance to grant 1 Charged Attack&#010;that uses no stamina and deals more DMG">A1</span>
               <span class="hover-icon" data-tooltip="A Crit Charged Attack restores energy to all party members">A4</span>
-              <span class="hover-icon" data-tooltip="Each hit has a chance to deal one spark of Burst DMG">C1</span>
+              <span class="hover-icon" data-tooltip="Each hit has a chance to deal 1 spark of Burst DMG">C1</span>
             </div>
             <div class="grid-text">
               <p>Performs 3 Pyro attacks</p>
@@ -671,8 +672,8 @@
             <div class="grid-item">
               <img src="/images/icons/klee/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Each hit has a chance to grant one Charged Attack&#010;that uses no stamina and deals more DMG">A1</span>
-              <span class="hover-icon" data-tooltip="Each hit has a chance to deal one spark of Burst DMG">C1</span>
+              <span class="hover-icon" data-tooltip="Each hit has a chance to grant 1 Charged Attack&#010;that uses no stamina and deals more DMG">A1</span>
+              <span class="hover-icon" data-tooltip="Each hit has a chance to deal 1 spark of Burst DMG">C1</span>
               <span class="hover-icon" data-tooltip="Decreases enemies DEF by 23% on hit">C2</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
             </div>
@@ -692,7 +693,7 @@
             <div class="grid-item">
               <img src="/images/icons/klee/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="Each hit from Attacks/Skill has a chance to proc one coordinated&#010;attack that deals 120% of Burst DMG">C1</span>
+              <span class="hover-icon" data-tooltip="Each hit from Attacks/Skill has a chance to proc 1 coordinated&#010;attack that deals 120% of Burst DMG">C1</span>
               <span class="hover-icon" data-tooltip="Switching characters during Burst deals AoE Pyro DMG&#010;Deals 555% of Klee's ATK">C4</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
               <span class="hover-icon" data-tooltip="On cast, All party members gains 10% Pyro DMG Bonus for 25s&#010;Restores 3 Energy to all party members every 3s (except Klee)">C6</span>
@@ -746,7 +747,7 @@
             <div class="grid-item">
               <img src="/images/icons/na3.png" draggable="false">
               <h2>Normal Attack</h2>
-              <span class="hover-icon" data-tooltip="On Skill cast, Gains Geo Infusion and increases DMG">A1</span>
+              <span class="hover-icon" data-tooltip="On skill cast, Gains Geo Infusion and increases DMG">A1</span>
             </div>
             <div class="grid-text">
               <p>Performs 4 attacks</p>
@@ -758,12 +759,12 @@
               <img src="/images/icons/navia/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
               <span class="hover-icon" data-tooltip="On hit, Each charge restores 3 energy to Navia (Max 9 energy)&#010;And decreases Burst CD by 1s (Max 3s)">C1</span>
-              <span class="hover-icon" data-tooltip="Each charge increase skill Crit Rate by 12% (Max 36%)^#010;On hit, Deals one AoE instance of Burst DMG">C2</span>
+              <span class="hover-icon" data-tooltip="Each charge increases skill Crit Rate by 12% (Max 36%)&#010;On hit, Deals 1 AoE instance of Burst DMG">C2</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
               <span class="hover-icon" data-tooltip="Each charge starting from 3, Increases skill Crit DMG by 45%&#010;All charges beyond 3 are refunded on cast">C6</span>
             </div>
             <div class="grid-text">
-              <p>Consumes all <b>Shrapnel Charges</b> and Deals Geo DMG. Increases DMG based on number of <b>Crystal Shrapnels</b></p>
+              <p>Consumes all <b>Crystal Shrapnels</b> and Deals Geo DMG. Increases DMG based on number of <b>Crystal Shrapnels</b></p>
               <p>Has 2 Charges</p>
               <p>Holding mode allows aiming and pulls nearby Crystallize Shards</p>
               <p><b>Crystal Shrapnels:</b></p>
@@ -781,7 +782,7 @@
             <div class="grid-item">
               <img src="/images/icons/navia/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="On skill hit, Deals one instance of Burst DMG">C2</span>
+              <span class="hover-icon" data-tooltip="On skill hit, Deals 1 instance of Burst DMG">C2</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
@@ -1123,6 +1124,7 @@
               <span class="hover-icon" data-tooltip="Swirling elements on cast grants bonus effects">A1</span>
               <span class="hover-icon" data-tooltip="Sprinting with charge fires wind arrows">A4</span>
               <span class="hover-icon" data-tooltip="Increases Normal/Charged DMG and ATK SPD by 10%">C1</span>
+              <span class="hover-icon" data-tooltip="Increases Burst DMG based on stamina lost during skill">C#</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
               <span class="hover-icon" data-tooltip="Normal Attacks deals another 40% ATK instance&#010;When stamina is below 40%, Restores 20% stamina once">C6</span>
             </div>
@@ -1144,7 +1146,7 @@
             <div class="grid-item">
               <img src="/images/icons/wanderer/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="On cast, Each stamina consumed from skill increases Burst DMG by 4%&#010;(Max 200%)">C2</span>
+              <span class="hover-icon" data-tooltip="Casting Burst during skill, Each stamina consumed from skill increases Burst DMG by 4%&#010;(Max 200%)">C2</span>
             </div>
             <div class="grid-text">
               <p>Deals AoE Anemo DMG</p>
@@ -1163,10 +1165,10 @@
             </div>
             <div class="grid-text">
               <p>Swirling elements on skill cast grants bonus effects:</p>
-              <li>Hydro: Increases Windfavored Stamina by 20</li>
-              <li>Pyro: Increases ATK by 30%</li>
-              <li>Cryo: Increases Crit Rate by 20%</li>
-              <li>Electro: Normal/Charged Attacks restores 0.8 energy (CD: 0.2s)</li>
+              <li><b style="color: #80C0FF">Hydro:</b> Increases Windfavored Stamina by 20</li>
+              <li><b style="color: #FF9999">Pyro:</b> Increases ATK by 30%</li>
+              <li><b style="color: #99FFFF">Cryo:</b> Increases Crit Rate by 20%</li>
+              <li><b style="color: #FFACFF">Electro:</b> Normal/Charged Attacks restores 0.8 energy (CD: 0.2s)</li>
               <p>Max Effects: 2</p>
             </div>
           </div>
