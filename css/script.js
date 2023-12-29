@@ -23,7 +23,7 @@ const wordsToColor = {
   'Electro DMG Bonus': '#FFACFF',
   'Cryo DMG Bonus': '#99FFFF',
   'Anemo DMG Bonus': '#80FFD7',
-  'Dendro DMG Bonus': '#99FF88',
+  'Dendro DMG Bonus': '#4BFF19',
   'Geo DMG Bonus': '#FFE699',
   
   'Pyro DMG': '#FF9999',
@@ -31,7 +31,7 @@ const wordsToColor = {
   'Electro DMG': '#FFACFF',
   'Cryo DMG': '#99FFFF',
   'Anemo DMG': '#80FFD7',
-  'Dendro DMG': '#99FF88',
+  'Dendro DMG': '#4BFF19',
   'Geo DMG': '#FFE699',
 
   'Pyro RES': '#FF9999',
@@ -39,7 +39,7 @@ const wordsToColor = {
   'Electro RES': '#FFACFF',
   'Cryo RES': '#99FFFF',
   'Anemo RES': '#80FFD7',
-  'Dendro RES': '#99FF88',
+  'Dendro RES': '#4BFF19',
   'Geo RES': '#FFE699',
 
   'Pyro Infusion': '#FF9999',
@@ -47,8 +47,20 @@ const wordsToColor = {
   'Electro Infusion': '#FFACFF',
   'Cryo Infusion': '#99FFFF',
   'Anemo Infusion': '#80FFD7',
-  'Dendro Infusion': '#99FF88',
-  'Geo Infusion': '#FFE699'
+  'Dendro Infusion': '#4BFF19',
+  'Geo Infusion': '#FFE699',
+
+  'Burning': '#FF9999',
+  'Vaporize': '#F6B375',
+  'Melt': '#F6B375',
+  'Overloaded': '#E5848A',
+  'Electro-Charged': '#FFACFF',
+  'Superconduct': '#B8ADFA',
+  'Frozen': '#99FFFF',
+  'Swirl': '#80FFD7',
+  'Dendro-Reaction': '#4BFF19',
+  'Spread': '#4BFF19',
+  'Crystallize': '#FFE699',
   
 };
 
