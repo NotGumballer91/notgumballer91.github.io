@@ -34,6 +34,14 @@ const wordsToColor = {
   'Dendro DMG': '#99FF88',
   'Geo DMG': '#FFE699',
 
+  'Pyro RES': '#FF9999',
+  'Hydro RES': '#80C0FF',
+  'Electro RES': '#FFACFF',
+  'Cryo RES': '#99FFFF',
+  'Anemo RES': '#80FFD7',
+  'Dendro RES': '#99FF88',
+  'Geo RES': '#FFE699',
+
   'Pyro Infusion': '#FF9999',
   'Hydro Infusion': '#80C0FF',
   'Electro Infusion': '#FFACFF',
