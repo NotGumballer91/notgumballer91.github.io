@@ -99,7 +99,7 @@ Nahida
 
 **Navia (Added)**
 
-Neuvillette
+**Neuvillette (Added)**
 
 **Nilou (Added)**
 
@@ -115,7 +115,7 @@ Razor
 
 Rosaria
 
-Sangonomiya Kokomi (Added)
+**Sangonomiya Kokomi (Added)**
 
 Sayu
 
