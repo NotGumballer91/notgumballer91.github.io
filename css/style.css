@@ -138,17 +138,20 @@ body {
 
 /* Hover icon's style */
 .hover-icon {
+  width: 30px;
+  height: auto;
   position: relative;
   display: inline-block;
   cursor: pointer;
   background-color: rgba(25, 25, 25, 0.5);
   border-radius: 20%;
-  padding: 4px;
+  padding: 1px;
   margin-left: 2%;
   color: rgb(125, 125, 125);
   font-size: 18px;
   transition: color 0.3s ease;
   z-index: 5;
+  text-align: center;
 }
 
 .hover-icon:hover {
@@ -162,7 +165,7 @@ body {
   content: attr(data-tooltip);
   position: absolute;
   text-align: left;
-  bottom: 100%; /* Position above the icon */
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(-8px); /* Fixed offset */
   padding: 8px 12px;

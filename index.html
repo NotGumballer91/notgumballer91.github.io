@@ -691,7 +691,7 @@
             </div>
             <div class="grid-text">
               <p>Sprinting toggles between Ice cloak and Gains Cryo Infusion when sprinting out</p>
-              <li>Activation Stamina costs 10</li>
+              <li>Activation costs 10 Stamina</li>
               <li>Drains stamina per movement</li>
               <li>Can traverse on water</li>
               <p>Infusion Duration: 5s</p>
@@ -808,6 +808,109 @@
             </div>
             <div class="grid-text">
               <p>Crit Charged Attack restores 2 Energy to all party members</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion"><!--Mona-->
+    <div class="accordion-section">
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/mona.webp); background-position: 50% 23%; background-repeat: no-repeat; background-size: auto;"><h2>Mona</h2></button>
+      <div class="accordion-content">
+        <div class="grid-container">
+          
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/na5.png" draggable="false">
+              <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="Each hit has a 20% to follow up a Charged Attack&#010;CD: 5s">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Charged Attack based on Alternative Sprint movement">C6</span>
+            </div>
+            <div class="grid-text">
+              <p>Performs 4 Hydro attacks</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/Mona/e.webp" draggable="false">
+              <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Passively creates Phantom during Alternative Sprint">A1</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
+            </div>
+            <div class="grid-text">
+              <p>Creates <b>Phantom</b>, taunting nearby enemies and periodically dealing AoE Hydro DMG</p>
+              <p>Hold mode creates Phantom in current position and dodges backwards</p>
+              <p><b>Phantom:</b></p>
+              <li>Has 4 instances</li>
+              <li>The 5th instance deals explosion DMG</li>
+              <li>Only one can exist</li>
+              <p>Duration: 5s</p>
+              <p>CD: 12s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/Mona/q.webp" draggable="false">
+              <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Omen status increases your own party member's Vaporize, Electro-Charged&#010;and Hydro-Swirl DMG by 15% for 8s">C1</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Omen status increases Crit Rate by 15%">C4</span>
+            </div>
+            <div class="grid-text">
+              <p>Applies <b>Illusory Bubble</b> and <b>Omen</b> status to enemies in a huge AoE</p>
+              <p><b>Illusory Bubble:</b></p>
+              <li>Any* hits pops the Illusory Bubble and dealing huge Hydro DMG</li>
+              <li>Immobilizes light enemies</li>
+              <li>Expiration also pops the Illusory Bubble</li>
+              <li>Illusory Bubble Duration: 8s</li>
+              <p><b>Omen:</b></p>
+              <li>Enemies with Omen status takes Bonus DMG</li>
+              <li>Omen Duration: 4s</li>
+              <p>Energy Cost: 60</p>
+              <p>CD: 15s</p>
+            </div>
+          </div>
+          
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/Mona/as.webp" draggable="false">
+              <h2>Alternative Sprint</h2>
+              <span class="hover-icon" data-tooltip="Each second of Alt sprint movement increases next the Charged Attack by 60%&#010;Max DMG Bonus: 180%&#010;Duration: 8s">C6</span>
+            </div>
+            <div class="grid-text">
+              <p>Sprinting toggles between water traversal and applies Hydro to nearby enemies when sprinting out</p>
+              <li>Activation costs 10 Stamina</li>
+              <li>Drains stamina per movement</li>
+              <li>Can traverse on water</li>
+              <br>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/Mona/a1.webp" draggable="false">
+              <h2>Ascension Passive 1</h2>
+            </div>
+            <div class="grid-text">
+              <p>During Alternative Sprint, Passively creates Skill on Mona during combat</p>
+              <li>Immediately deals Explosion DMG</li>
+              <li>Deals 50% of Skill DMG</li>
+              <p>Interval: 2s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/Mona/a4.webp" draggable="false">
+              <h2>Ascension Passive 4</h2>
+            </div>
+            <div class="grid-text">
+              <p>Increases Mona's Hydro DMG Bonus by 20% of her Energy Recharge</p>
             </div>
           </div>
 
@@ -1076,6 +1179,104 @@
               <p>Every 1% above Raiden Shogun's 100% Energy Recharge grants:</p>
               <li>Increases Energy Restoration during Musou Isshin by 0.6%</li>
               <li>Increases Electro DMG Bonus by 0.4%</li>
+              <br>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion"><!--Kokomi-->
+    <div class="accordion-section">
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/kokomi.webp); background-position: 50% 26%; background-repeat: no-repeat; background-size: auto;"><h2>Sangonomiya Kokomi</h2></button>
+      <div class="accordion-content">
+        <div class="grid-container">
+          
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/na5.png" draggable="false">
+              <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="During Burst, Third attack deals 30% Max HP DMG">C1</span>
+            </div>
+            <div class="grid-text">
+              <p>Performs 3 Hydro attacks</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/kokomi/e.webp" draggable="false">
+              <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Casting Burst refreshes the duration">A1</span>
+              <span class="hover-icon" data-tooltip="Skill gains Healing Bonus 4.5% of Kokomi's Max HP if any party member is under 50% HP">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
+            </div>
+            <div class="grid-text">
+              <p>Creates a stationary Jellyfish, healing party members around it and dealing Hydro DMG to nearby enemies</p>
+              <li>Ticks every 2s (Total 7)</li>
+              <li>Healing is based on Kokomi's Max HP</li>
+              <li>DMG is based on Kokomi's ATK</li>
+              <li>Only one can exist</li>
+              <p>Duration: 12s</p>
+              <p>CD: 20s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/kokomi/q.webp" draggable="false">
+              <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Refreshes Skill's duration">A1</span>
+              <span class="hover-icon" data-tooltip="DMG is increased based on Healing Bonus">A4</span>
+              <span class="hover-icon" data-tooltip="Burst gains Healing Bonus 0.6% of Kokomi's Max HP if any party member is under 50% HP">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="During Burst, Increases Normal Attack SPD by 10%&#010;Each hit generates 0.8 Energy every 0.2s">C4</span>
+              <span class="hover-icon" data-tooltip="During Burst, Kokomi gains 40% Hydro DMG Bonus for 4s after healing&#010;any character above 80% HP">C6</span>
+            </div>
+            <div class="grid-text">
+              <p>Enters <b>Ceremonial Garment</b> state, enhancing Normal Attacks</p>
+              <p><b>Ceremonial Garment:</b></p>
+              <li>Normal Attacks DMG is increased based on Kokomi's Max HP</li>
+              <li>Each hit heals entire party based on Kokomi's Max HP</li>
+              <li>Increased Interruped Resistance</li>
+              <li>Allows Kokomi to walk on water</li>
+              <p>Duration: 10s</p>
+              <p>Energy Cost: 70</p>
+              <p>CD: 18s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/kokomi/a1.webp" draggable="false">
+              <h2>Ascension Passive 1</h2>
+            </div>
+            <div class="grid-text">
+              <p>On Burst cast, Refreshes Skill's duration</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/kokomi/a4.webp" draggable="false">
+              <h2>Ascension Passive 4</h2>
+            </div>
+            <div class="grid-text">
+              <p>Burst DMG is increased by 15% of Kokomi's Healing Bonus</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/kokomi/a.webp" draggable="false">
+              <h2>Additional Passive</h2>
+            </div>
+            <div class="grid-text">
+              <p>Gains 25% Healing Bonus</p>
+              <p>Decreases Crit Rate by 100%</p>
+              <li>Can still crit if above 0% Crit Rate</li>
               <br>
             </div>
           </div>
