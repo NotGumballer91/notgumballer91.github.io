@@ -7,7 +7,7 @@ Explaining Genshin character's kit as short as possible without Hoyoverse's long
 
 Most of the functions should work
 
-### Characters
+## Characters to be added
 
 **Albedo (Added)**
 
