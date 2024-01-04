@@ -1,25 +1,25 @@
-# NotGumballer91.github.io
-a tl;dr for genshin characters
+# [Genshin tl;dr](https://notgumballer91.github.io/)
+Explaining Genshin character's kit as short as possible without Hoyoverse's long essay bloat
 
-# How to save locally
+## How to save locally
 1. Download as ZIP
 2. Open the index.html in any browser
 
 Most of the functions should work
 
-# Characters
+### Characters
 
-Albedo (Added)
+**Albedo (Added)**
 
-Alhaitham (Added)
+**Alhaitham (Added)**
 
 Aloy
 
-Amber (Added)
+**Amber (Added)**
 
 Arataki Itto
 
-Baizhu (Added)
+**Baizhu (Added)**
 
 Barbara
 
@@ -37,13 +37,13 @@ Collei
 
 Cyno
 
-Dehya (Added)
+**Dehya (Added)**
 
 Diluc
 
 Diona
 
-Dori (Added)
+**Dori (Added)**
 
 Eula
 
@@ -53,7 +53,7 @@ Fischl
 
 Freminet
 
-Furina (Added)
+**Furina (Added)**
 
 Ganyu
 
@@ -67,7 +67,7 @@ Kaedahara Kazuha
 
 Kaeya
 
-Kamisato Ayaka (Added)
+**Kamisato Ayaka (Added)**
 
 Kamisato Ayato
 
@@ -77,7 +77,7 @@ Keqing
 
 Kirara
 
-Klee (Added)
+**Klee (Added)**
 
 Kujou Sara
 
@@ -93,15 +93,15 @@ Lyney
 
 Mika
 
-Mona (Added)
+**Mona (Added)**
 
 Nahida
 
-Navia (Added)
+**Navia (Added)**
 
 Neuvillette
 
-Nilou (Added)
+**Nilou (Added)**
 
 Ningguang
 
@@ -109,7 +109,7 @@ Noelle
 
 Qiqi
 
-Raiden Shogun (Added)
+**Raiden Shogun (Added)**
 
 Razor
 
@@ -125,7 +125,7 @@ Shikanoin Heizou
 
 Sucrose
 
-Tartaglia (Added)
+**Tartaglia (Added)**
 
 Thoma
 
@@ -135,7 +135,7 @@ Traveler
 
 Venti
 
-Wanderer (Added)
+**Wanderer (Added)**
 
 Wriothesley
 
