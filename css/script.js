@@ -58,6 +58,7 @@ const wordsToColor = {
   'Superconduct': '#B8ADFA',
   'Frozen': '#99FFFF',
   'Swirl': '#80FFD7',
+  'Bloom': '#4BFF19',
   'Dendro-Reaction': '#4BFF19',
   'Spread': '#4BFF19',
   'Crystallize': '#FFE699',

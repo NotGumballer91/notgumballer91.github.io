@@ -1007,6 +1007,99 @@
     </div>
   </div>
 
+  <div class="accordion"><!--Neuvillette-->
+    <div class="accordion-section">
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/neuvillette.webp); background-position: 50% 20%; background-repeat: no-repeat; background-size: auto, 2000px, auto;"><h2>Neuvillette</h2></button>
+      <div class="accordion-content">
+        <div class="grid-container">
+          
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/na5.png" draggable="false">
+              <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="Each Hydro-Reactions increases Charged Attack DMG">A1</span>
+              <span class="hover-icon" data-tooltip="Increases Interrupt Resistance during Charge Attack&#010;Also gains 1 stack from A1">C1</span>
+              <span class="hover-icon" data-tooltip="Each stack from A1 increases Crit DMG">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="When healed, Creates 1 Water Droplet">C4</span>
+              <span class="hover-icon" data-tooltip="Charged Attack passively consumes nearby Water Droplets&#010;Each Water Droplet extends the duration by 1s&#010;Also fires off 2 Hydro currents, dealing 10% of Max HP every 2s">C6</span>
+            </div>
+            <div class="grid-text">
+              <p>Performs 3 Hydro attacks</p>
+              <p>Charged Attack consumes nearby <b>Water Droplets</b> and deals continuous AoE Hydro DMG (based on Max HP) to all enemies in a straight-line for 3s</p>
+              <li>Charged Attack takes 3s to charge up</li>
+              <li>Drains 8% HP every 0.5s until 50% HP threshold</li>
+              <li>Damage ticks every 0.4s</li>
+              <li>Can be cancelled by sprinting, jumping or using Skill and Burst</li>
+              <li>Can be interrupted</li>
+              <p><b>Water Droplets:</b></p>
+              <li>Each water droplets reduces charging time by 1s</li>
+              <li>Each water droplets restores 16% Max HP</li>
+              <li>Only 3 water droplets can be consumed at a time</li>
+              <p>Water Droplet Duration: 15s</p>
+              <p>Max Water Droplets: 12</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/neuvillette/e.webp" draggable="false">
+              <h2>Elemental Skill</h2>
+            </div>
+            <div class="grid-text">
+              <p>Deals AoE Hydro DMG based on Max HP and creates 3 Water Droplets</p>
+              <p>Also deals Pneuma-Aligned Hydro DMG (CD: 10s)</p>
+              <p>Water Droplet Duration: 15s</p>
+              <p>CD: 12s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/neuvillette/q.webp" draggable="false">
+              <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
+            </div>
+            <div class="grid-text">
+              <p>Deals AoE Hydro DMG based on Max HP and creates 6 Water Droplets</p>
+              <li>Deals 2 instances of Hydro DMG</li>
+              <p>Water Droplet Duration: 15s</p>
+              <p>Energy Cost: 70</p>
+              <p>CD: 18s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/neuvillette/a1.webp" draggable="false">
+              <h2>Ascension Passive 1</h2>
+              <span class="hover-icon" data-tooltip="Grants 1 stack when switching to Neuvillette in the party">C1</span>
+              <span class="hover-icon" data-tooltip="Each stack also increases Charged Attack's Crit DMG by 14%">C2</span>
+            </div>
+            <div class="grid-text">
+              <p>Each <i>independent</i> Hydro Reactions from party members gives 1 stack for 30s</p>
+              <li>Available Hydro reactions: Vaporize, Frozen, Electro-Charged, Bloom, Swirl and Crystallize</li>
+              <p>Each stack increases Charged Attack by 10%/15%/60% respectively</p>
+              <p>Max stacks: 3</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/neuvillette/a4.webp" draggable="false">
+              <h2>Ascension Passive 4</h2>
+            </div>
+            <div class="grid-text">
+              <p>Each 1% of current HP over 30% of Max HP increases Hydro DMG Bonus by 0.6%</p>
+              <p>Max DMG Bonus: 30%</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="accordion"><!--Nilou-->
     <div class="accordion-section">
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/nilou.webp); background-position: 50% 30%; background-repeat: no-repeat; background-size: auto;"><h2>Nilou</h2></button>
@@ -1188,7 +1281,7 @@
     </div>
   </div>
 
-  <div class="accordion"><!--Kokomi-->
+  <div class="accordion"><!--Sangonomiya Kokomi-->
     <div class="accordion-section">
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/kokomi.webp); background-position: 50% 26%; background-repeat: no-repeat; background-size: auto;"><h2>Sangonomiya Kokomi</h2></button>
       <div class="accordion-content">
@@ -1230,16 +1323,16 @@
               <img src="images/icons/kokomi/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
               <span class="hover-icon" data-tooltip="On cast, Refreshes Skill's duration">A1</span>
-              <span class="hover-icon" data-tooltip="DMG is increased based on Healing Bonus">A4</span>
+              <span class="hover-icon" data-tooltip="All Normal Attack DMG is increased based on Healing Bonus">A4</span>
               <span class="hover-icon" data-tooltip="Burst DMG gains 0.6% of Kokomi's Max HP as Healing Bonus&#010;if any party member is under 50% HP">C2</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
               <span class="hover-icon" data-tooltip="During Burst, Increases Normal Attack SPD by 10%&#010;Each hit generates 0.8 Energy">C4</span>
-              <span class="hover-icon" data-tooltip="During Burst, Kokomi gains 40% Hydro DMG Bonus for 4s after healing&#010;any character above 80% HP">C6</span>
+              <span class="hover-icon" data-tooltip="During Burst, Kokomi gains 40% Hydro DMG Bonus for 4s after healing&#010;any character above (or up to) 80% max HP">C6</span>
             </div>
             <div class="grid-text">
-              <p>Enters <b>Ceremonial Garment</b> state, enhancing Normal Attacks</p>
+              <p>Enters <b>Ceremonial Garment</b> state, enhancing All Normal Attacks</p>
               <p><b>Ceremonial Garment:</b></p>
-              <li>Normal Attacks DMG is increased based on Kokomi's Max HP</li>
+              <li>All Normal Attacks are increased based on Kokomi's Max HP</li>
               <li>Each hit heals entire party based on Kokomi's Max HP</li>
               <li>Increased Interruped Resistance</li>
               <li>Allows Kokomi to walk on water</li>
