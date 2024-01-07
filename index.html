@@ -195,9 +195,103 @@
     </div>
   </div>
 
+  <div class="accordion"><!--Arataki Itto-->
+    <div class="accordion-section">
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/itto.webp); background-position: 50% 20%; background-repeat: no-repeat; background-size: auto;"><h2>Arataki Itto</h2></button>
+      <div class="accordion-content">
+        <div class="grid-container">
+          
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/na3.png" draggable="false">
+              <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="Each Charged Attack hit increases SPD and Interrupt Resistance">A1</span>
+              <span class="hover-icon" data-tooltip="Charged Attack deals more DMG based on Itto's DEF">A4</span>
+              <span class="hover-icon" data-tooltip="Increases Charged Attack's Crit DMG by 70%&#010;Charged Attack has a 50% chance to not consume stacks">C6</span>
+            </div>
+            <div class="grid-text">
+              <p>Performs 4 attacks</p>
+              <p>Each 2nd and 4th attack gains 1 and 2 <b>Superlative Superstrength</b> stacks</p>
+              <p><b>Superlative Superstrength:</b></p>
+              <li>Charged Attack consumes stacks to deal consecutive attacks</li>
+              <li>Charged Attack itself does not give stacks</li>
+              <li>Gaining stacks refreshes duration</li>
+              <p>Max stacks: 5</p>
+              <p>Stack duration: 60s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/itto/e.webp" draggable="false">
+              <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+            </div>
+            <div class="grid-text">
+              <p>Throws <b>Ushi</b>, Dealing Geo DMG</p>
+              <p>Holding mode allows aiming</p>
+              <b>Ushi:</b>
+              <li>Taunt nearby enemies</li>
+              <li>HP is based on Itto's Max HP</li>
+              <li>Ushi taking DMG gains 1 stack every 2s</li>
+              <li>Gives 1 stack on expire or killed</li>
+              <p>Duration: 6s</p>
+              <p>CD: 10s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/itto/q.webp" draggable="false">
+              <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="On cast, Starts with 2 stacks&#010;After 1s, Gains 3 stacks within 1.5s">C1</span>
+              <span class="hover-icon" data-tooltip="On cast, Each Geo element party members decreases skill CD by 1.5s&#010;And restores 4.5 energy to Itto">C2</span>
+              <span class="hover-icon" data-tooltip="On expire, All party members gains 20% DEF and ATK for 10s ">C4</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
+            </div>
+            <div class="grid-text">
+              <p>Enter <b>Raging Oni</b> state</p>
+              <p><b>Raging Oni:</b></p>
+              <li>Converts All Normal attacks to Geo DMG</li>
+              <li>Each 1st and 3rd hits gains 1 stack</li>
+              <li>Decreases Itto's All RES by 20%</li>
+              <li>Switching character cancels state</li>
+              <p>Energy Cost: X</p>
+              <p>CD: X</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/itto/a1.webp" draggable="false">
+              <h2>Ascension Passive 1</h2>
+            </div>
+            <div class="grid-text">
+              <p>Using Charged Attack with stacks grants the following:</p>
+              <li>Each hit increases the next attack's ATK SPD by 10% (Max 30%)</li>
+              <li>Increases Interrupt Resistance</li>
+              <br>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/itto/a4.webp" draggable="false">
+              <h2>Ascension Passive 4</h2>
+            </div>
+            <div class="grid-text">
+              <p>Charged Attack DMG is increased by 35% of Itto's DEF</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="accordion"><!--Amber-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/amber.webp); background-position: 50% 30%; background-repeat: no-repeat; background-size: auto;"><h2>Amber</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/amber.webp); background-position: 50% 30%; background-repeat: no-repeat; background-size: auto, 1800px, auto;"><h2>Amber</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
@@ -222,6 +316,7 @@
             </div>
             <div class="grid-text">
               <p>Throws <b>Baron Bunny</b>, exploding after some time and dealing AoE Pyro DMG</p>
+              <p>Holding mode allows aiming</p>
               <p><b>Baron Bunny:</b></p>
               <li>Taunts nearby enemies</li>
               <li>HP is based on Amber's Max HP</li>
@@ -348,6 +443,85 @@
               <li>2% for Burning, Bloom, Hyperbloom and Burgeon (Max 100%/50000HP)</li>
               <li>0.8% for Aggravate and Spread (Max 40%/50000HP)</li>
               <br>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion"><!--Barbara-->
+    <div class="accordion-section">
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/barbara.webp); background-position: 50% 24%; background-repeat: no-repeat; background-size: auto, 1700px, auto;"><h2>Barbara</h2></button>
+      <div class="accordion-content">
+        <div class="grid-container">
+          
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/na5.png" draggable="false">
+              <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="Each enemies hit with Barbara's Charged Attack restores 1 energy&#010;Max Energy Restoration: 5">C4</span>
+            </div>
+            <div class="grid-text">
+              <p>Performs 4 Hydro attacks</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/barbara/e.webp" draggable="false">
+              <h2>Elemental Skill</h2>
+              <span class="hover-icon" data-tooltip="Skill reduces stamina consumption">A1</span>
+              <span class="hover-icon" data-tooltip="Getting energy particles extends the duration">A4</span>
+              <span class="hover-icon" data-tooltip="Decreases CD by 4.8s&#010;Skill also grants 15% Hydro DMG Bonus">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
+            </div>
+            <div class="grid-text">
+              <p>Creates <b>Melody Loop</b> dealing Hydro DMG, and periodically healing your active character based on Barbara's Max HP</p>
+              <p><b>Melody Loop:</b></p>
+              <li>Each hit of Barbara's Normal attack heals entire party</li>
+              <li>Charged Attack heals 4x the amount</li>
+              <li>Heals active character every 5s</li>
+              <li>Periodically applies Hydro to active character and nearby enemies</li>
+              <p>Duration: 15s</p>
+              <p>CD: 32s</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/barbara/q.webp" draggable="false">
+              <h2>Elemental Burst</h2>
+              <span class="hover-icon" data-tooltip="Barbara gains 1 Energy every 10s">C1</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Barbara automatically revives fallen character (except herself) back to full HP&#010;CD: 15min">C6</span>
+            </div>
+            <div class="grid-text">
+              <p>Heals entire party based on Barbara's Max HP</p>
+              <p>Energy Cost: X</p>
+              <p>CD: X</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/barbara/a1.webp" draggable="false">
+              <h2>Ascension Passive 1</h2>
+            </div>
+            <div class="grid-text">
+              <p>Skill also reduces stamina consumption by 12%</p>
+            </div>
+          </div>
+
+          <div class="grid-group">
+            <div class="grid-item">
+              <img src="images/icons/barbara/a4.webp" draggable="false">
+              <h2>Ascension Passive 4</h2>
+            </div>
+            <div class="grid-text">
+              <p>During skill, Getting Energy particles extends the skill duration by 1s</p>
+              <p>Max extension: 5s</p>
             </div>
           </div>
 
@@ -1244,7 +1418,7 @@
               <li>Increased Interrupt Resistance and immune to Electro-Charged reaction</li>
               <li>Restores entire party's energy every hit</li>
               <li>Energy Restoration only restores 5 times every 1s</li>
-              <li>Switching characters expires it</li>
+              <li>Switching characters cancel state</li>
               <p>Musou Isshin Duration: 7s</p>
               <p>Resolve Stack Duration: 300s</p>
               <p>Max Resolve Stacks: 60</p>

@@ -17,11 +17,11 @@ Aloy
 
 **Amber (Added)**
 
-Arataki Itto
+**Arataki Itto (Added)**
 
 **Baizhu (Added)**
 
-Barbara
+**Barbara (Added)**
 
 Beidou
 
