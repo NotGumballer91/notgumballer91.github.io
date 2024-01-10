@@ -7,6 +7,13 @@ Explaining Genshin character's kit as short as possible without Hoyoverse's long
 
 Most of the functions should work
 
+## How to contribute
+
+Fork this repository and name it to a branch we and you can recognize (Example: If you're working on Amber, name it amber and etc)
+And work on any character using the template.html
+
+Once you're done, push your forked repository to the main branch and we'll review
+
 ## Characters to be added
 
 **Albedo (Added)**
