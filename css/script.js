@@ -45,7 +45,7 @@ const wordsToColor = {
   'Burning': '#FF9999',
   'Vaporize': '#F6B375',
   'Melt': '#F6B375',
-  'Overloaded': '#E5848A',
+  'Overload': '#E5848A',
   'Electro-Charged': '#FFACFF',
   'Superconduct': '#B8ADFA',
   'Frozen': '#99FFFF',
