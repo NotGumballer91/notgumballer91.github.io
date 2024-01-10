@@ -1776,7 +1776,7 @@
     </div>
   </div>
 
-  <div class="accordion"><!--Ganyu (not done)-->
+  <div class="accordion"><!--Ganyu-->
     <div class="accordion-section">
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/Ganyu.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Ganyu</h2></button>
       <div class="accordion-content">
@@ -1784,12 +1784,22 @@
           
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/na1-5.png" draggable="false">
+              <img src="images/icons/na2.png" draggable="false">
               <h2>Normal Attack</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="After firing a Frostflake Arrow, increases Frostflake Arrow's Crit Rate">A1</span>
+              <span class="hover-icon" data-tooltip="When Frostflake arrows hit enemies, decreases their &#010;Cryo RES by 15% for 6s, and Ganyu gains 2 energy&#010;Can only occur once per Frostflake Arrow">C1</span>
+              <span class="hover-icon" data-tooltip="After using Skill, the next Frostflake Arrow fired within 30s does not require charging">C6</span>
             </div>
             <div class="grid-text">
-              <p>Performs X attacks</p>
+              <p>Performs 6 attacks</p>
+              <p><b>Charged Attack:</b></p>
+              <p>Charges arrow level while aiming. Effect varies from charge level:</p>
+              <li>Charge Level 1: Fires an arrow dealing Cryo DMG</li>
+              <li>Charge Level 2: Fires a <b>Frostflake Arrow</b></li>
+              <p><b>Frostflake Arrow:</b></p>
+              <li>Deals Cryo DMG</li>
+              <li>On hit, Frostflake Arrow blooms dealing AoE Cryo DMG</li>
+              <br>
             </div>
           </div>
 
@@ -1797,12 +1807,17 @@
             <div class="grid-item">
               <img src="images/icons/Ganyu/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Skill gains 1 additional charge">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Skill text here</p>
-              <p>Duration: X</p>
-              <p>CD: X</p>
+              <p>Ganyu dashes backward, leaving an <b>Ice Lotus</b> dealing AoE Cryo DMG</p>
+              <p><b>Ice Lotus:</b></p>
+              <li>Taunts enemies</li>
+              <li>Inherits based on Max HP</li>
+              <li>Explodes once it is destroyed or expires, dealing AoE Cryo DMG</li>
+              <p>Duration: 6s</p>
+              <p>CD: 10s</p>
             </div>
           </div>
 
@@ -1810,12 +1825,16 @@
             <div class="grid-item">
               <img src="images/icons/Ganyu/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Increases Cryo DMG Bonus when inside Burst AoE">A4</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Enemies take 5% increasing DMG for every 3s up to 25% within Burst AoE &#010;Effect lingers for 3s when enemies leave Burst AoE">C4</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Burst text here</p>
-              <p>Energy Cost: X</p>
-              <p>CD: X</p>
+              <p>Summons a <b>Sacred Cryo Pearl</b></p>
+              <p><b>Sacred Cryo Pearl:</b></p>
+              <li>Deals Cryo DMG within an AoE</li>
+              <p>Energy Cost: 60</p>
+              <p>CD: 15s</p>
             </div>
           </div>
 
@@ -1825,7 +1844,7 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 1 text here</p>
+              <p>After firing a Frostflake Arrow, the next Frostlake Arrows have increased 20% Crit Rate</p>
             </div>
           </div>
 
@@ -1835,7 +1854,7 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 4 text here</p>
+              <p>When inside Burst AoE, grants 20% Cryo DMG Bonus to active characters</p>
             </div>
           </div>
 
@@ -1940,12 +1959,12 @@
             </div>
             <div class="grid-text">
               <p>Consumes 30% of current HP and enters <b>Paramita Papilio</b> state.</p>
-              <b>Paramita Papilio:</b>
+              <p><b>Paramita Papilio:</b></p>
               <li>Increases ATK based on Max HP. Cannot exceed 400% of Hu Tao's Base ATK</li>
               <li>Converts attacks to Pyro DMG, cannot be overriden by other infusions</li>
               <li>Increased Interrupt Resistance</li>
               <li>Charged Attacks applies <b>Blood Blossom</b> to enemies</li>
-              <b>Blood Blossom:</b>
+              <p><b>Blood Blossom:</b></p>
               <li>Enemies affected will take Pyro DMG every 4s</li>
               <li>Only one Blood Blossom can affect enemies. Refreshes effect duration once hit again</li>
               <p>Blood Blossom Duration: 8s</p>
@@ -5266,7 +5285,7 @@
     </div>
   </div>
 
-  <div class="accordion"><!--Yaoyao (in progress)-->
+  <div class="accordion"><!--Yaoyao (not done)-->
     <div class="accordion-section">
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/Yaoyao.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Yaoyao</h2></button>
       <div class="accordion-content">
@@ -5274,11 +5293,12 @@
           
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/na4.png" draggable="false">
+              <img src="images/icons/na1-5.png" draggable="false">
               <h2>Normal Attack</h2>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
             </div>
             <div class="grid-text">
-              <p>Performs 4 attacks</p>
+              <p>Performs X attacks</p>
             </div>
           </div>
 
@@ -5289,16 +5309,9 @@
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
             </div>
             <div class="grid-text">
-              <p>Throws Yuegui, Throwing white-radishes. White-Radish Heals nearby character or deals Dendro DMG to enemies</p>
-              <p>Holding mode allow aiming</p>
-              <p><b>Yuegui:</b></p>
-              <li>Heals (based on Yaoyao's Max HP) to nearby characters if below 70% </li>
-              <li>Otherise, Deals Dendro DMG to nearby enemies</li>
-              <li>If no enemies are present, Heals any nearby character</li>
-              <li>Picking up white-radishes also heals the character</li>
-              <p>White-Radish Duration: 5s</p>
-              <p>Duration: 10s</p>
-              <p>CD: 15s</p>
+              <p>Elemental Skill text here</p>
+              <p>Duration: X</p>
+              <p>CD: X</p>
             </div>
           </div>
 
@@ -5309,7 +5322,7 @@
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
             </div>
             <div class="grid-text">
-              <p>Enter </p>
+              <p>Elemental Burst text here</p>
               <p>Energy Cost: X</p>
               <p>CD: X</p>
             </div>
@@ -5546,7 +5559,7 @@
     </div>
   </div>
 
-  <div class="accordion"><!--Zhongli-->
+  <div class="accordion"><!--Zhongli (in progress!)-->
     <div class="accordion-section">
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/zhongli.webp); background-position: 45% 20%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Zhongli</h2></button>
       <div class="accordion-content">
