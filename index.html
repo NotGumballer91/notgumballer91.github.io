@@ -9,7 +9,7 @@
   <title>Genshin TL;DR</title>
 </head>
 <body>
-
+  
 <div class="container">
   <h1>Genshin Too Long; Didn't Read </h1>
   <br>
@@ -1912,7 +1912,7 @@
     </div>
   </div>
 
-  <div class="accordion"><!--Hu Tao (not done)-->
+  <div class="accordion"><!--Hu Tao-->
     <div class="accordion-section">
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/hutao.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Hu Tao</h2></button>
       <div class="accordion-content">
@@ -1922,10 +1922,9 @@
             <div class="grid-item">
               <img src="images/icons/na1-5.png" draggable="false">
               <h2>Normal Attack</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
             </div>
             <div class="grid-text">
-              <p>Performs X attacks</p>
+              <p>Performs 6 attacks</p>
             </div>
           </div>
 
@@ -1933,12 +1932,25 @@
             <div class="grid-item">
               <img src="images/icons/hutao/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Crit rate is increased by 12% for 8s for everyone &#010;except Hu Tao after skill state ends">A1</span>
+              <span class="hover-icon" data-tooltip="When in Skill state, Charged Attacks do not consume stamina">C1</span>
+              <span class="hover-icon" data-tooltip="Increases Blood Blossom DMG by 10% of Max HP at the time of application&#010;Burst now also applies Blood Blossom to enemies">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Increases Crit Rate by 12% for 15s for allies (excluding Hu Tao) when an enemy is defeated with Blood Blossom">C4</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Skill text here</p>
-              <p>Duration: X</p>
-              <p>CD: X</p>
+              <p>Consumes 30% of current HP and enters <b>Paramita Papilio</b> state.</p>
+              <b>Paramita Papilio:</b>
+              <li>Increases ATK based on Max HP. Cannot exceed 400% of Hu Tao's Base ATK</li>
+              <li>Converts attacks to Pyro DMG, cannot be overriden by other infusions</li>
+              <li>Increased Interrupt Resistance</li>
+              <li>Charged Attacks applies <b>Blood Blossom</b> to enemies</li>
+              <b>Blood Blossom:</b>
+              <li>Enemies affected will take Pyro DMG every 4s</li>
+              <li>Only one Blood Blossom can affect enemies. Refreshes effect duration once hit again</li>
+              <p>Blood Blossom Duration: 8s</p>
+              <p>Duration: 9s</p>
+              <p>CD: 16s</p>
             </div>
           </div>
 
@@ -1946,12 +1958,14 @@
             <div class="grid-item">
               <img src="images/icons/hutao/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Burst text here</p>
-              <p>Energy Cost: X</p>
-              <p>CD: X</p>
+              <p>Deals AoE Pyro DMG</p>
+              <p>Heals Hu Tao depending on how many enemies are hit, up to 5 times</p>
+              <li>If HP is lower than 50%, increases Burst DMG and heal amount</li>
+              <p>Energy Cost: 60</p>
+              <p>CD: 15s</p>
             </div>
           </div>
 
@@ -1961,7 +1975,7 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 1 text here</p>
+              <p>When Skill state ends, increases Crit Rate for the whole party by 12% for 8s (excluding Hu Tao)</p>
             </div>
           </div>
 
@@ -1969,9 +1983,10 @@
             <div class="grid-item">
               <img src="images/icons/hutao/a4.webp" draggable="false">
               <h2>Ascension Passive 4</h2>
+              <span class="hover-icon" data-tooltip="When HP is lower than 25% or takes lethal DMG, Hu Tao doesn't die &#010;&#010;Increases Physical & Elemental RES, and Crit Rate by 100%, and Interrupt Resistance for 10s &#010;Effect triggers automatically when HP is 1. &#010;&#010;CD: 60s">C6</span>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 4 text here</p>
+              <p>When HP is lower than 50%, Pyro DMG Bonus is increased by 33%</p>
             </div>
           </div>
 
