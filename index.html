@@ -1678,7 +1678,7 @@
 
   <div class="accordion"><!--Furina-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/furina.webp); background-position: 51% 26%; background-repeat: no-repeat; background-size: auto, 2100px, auto;"><h2>Furina</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/furina.webp); background-position: 51% 26%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Furina</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
@@ -3383,7 +3383,7 @@
 
   <div class="accordion"><!--Neuvillette-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/neuvillette.webp); background-position: 50% 20%; background-repeat: no-repeat; background-size: auto, 1800px, auto;"><h2>Neuvillette</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/neuvillette.webp); background-position: 50% 20%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Neuvillette</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
@@ -3770,7 +3770,7 @@
 
   <div class="accordion"><!--Raiden Shogun-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/raiden.webp); background-position: 45% 20%; background-repeat: no-repeat; background-size: auto, 1800px, auto;"><h2>Raiden Shogun</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/raiden.webp); background-position: 45% 20%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Raiden Shogun</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
@@ -5525,7 +5525,7 @@
 
   <div class="accordion"><!--Zhongli (in progress!)-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/zhongli.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Zhongli</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/zhongli.webp); background-position: 45% 20%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Zhongli</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
@@ -5536,7 +5536,7 @@
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
             </div>
             <div class="grid-text">
-              <p>Performs X attacks</p>
+              <p>Performs 6 attacks</p>
             </div>
           </div>
 
@@ -5547,9 +5547,18 @@
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Skill text here</p>
-              <p>Duration: X</p>
-              <p>CD: X</p>
+              <p>Creates <b>Stone Stele</b></p>
+              <p>Holding mode causes nearby Geo energy to explode and creates<b>Jade Shield</b></p>
+              <p><b>Stone Stele:</b></p>
+              <li>Deals AoE Geo DMG every 2s</li>
+              <li>Resonates with other Geo Constructions</li>
+              <p><b>Jade Shield:</b></p>
+              <li>Jade Shield scales from Zhongli's Max HP</li>
+              <li>Shield reduces All Incoming DMG by 33%</li>
+              <li>Shield reduces All nearby enemies RES by 20%</li>
+              <li>Shield Duration: 20s</li>
+              <p>Tap CD: 4s</p>
+              <p>Hold CD: 12s</p>
             </div>
           </div>
 
@@ -5560,9 +5569,10 @@
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Burst text here</p>
-              <p>Energy Cost: X</p>
-              <p>CD: X</p>
+              <p>Deals huge AoE Geo DMG and stuns enemies that are hit</p>
+              <li>Bosses cannot be stunned</li>
+              <p>Energy Cost: 40</p>
+              <p>CD: 12s</p>
             </div>
           </div>
 
@@ -5572,7 +5582,9 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 1 text here</p>
+              <p>Each time Jade Shield takes DMG, Increases Shield Strength by 5% (Can stack)</p>
+              <li>Refreshing Shield resets stacks</li>
+              <p>Max stacks: 25%</p>
             </div>
           </div>
 
@@ -5582,7 +5594,10 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 4 text here</p>
+              <p>Increases entire kit by Zhongli's Max HP:</p>
+              <li>All Normal Attacks are increased by 1.39% Max HP</li>
+              <li>Skill DMG and Resonance DMG increased by 1.9% Max HP</li>
+              <li>Burst DMG increased by 33% Max HP</li>
             </div>
           </div>
 
@@ -5591,7 +5606,7 @@
     </div>
   </div>
 
-  <br>
+  <br>  
   <br>
   <br>
   <p><i>Will add more characters once they're released!</i></p>
