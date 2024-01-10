@@ -64,11 +64,11 @@ Freminet
 
 **Furina (Added)**
 
-Ganyu
+**Ganyu (Added)**
 
 Gorou
 
-Hu Tao
+**Hu Tao (Added)**
 
 Jean
 
@@ -160,7 +160,7 @@ Yae Miko
 
 Yanfei
 
-Yaoyao
+**Yaoyao (Added)**
 
 Yelan
 
@@ -168,4 +168,4 @@ Yoimiya
 
 Yun Jin
 
-Zhongli
+**Zhongli (Added)**
