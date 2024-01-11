@@ -5389,8 +5389,9 @@
               <p>Performs 4 attacks</p>
               <p>After 5 seconds out of combat enters <b>Breakthrough</b> state</p>
               <p><b>Breakthrough: </b></p>
-              <li>Decreased charged aimed shot charge time by 80%</li>
+              <li>Decreased aimed shot charge time by 80%</li>
               <li>Charged shot deals AoE Hydro DMG based on Max HP</li>
+              <li>Charged shot ends Breakthrough state</li>
               <br>
             </div>
           </div>
@@ -5399,14 +5400,15 @@
             <div class="grid-item">
               <img src="images/icons/yelan/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Increases 1 additional charge">C1</span>
-              <span class="hover-icon" data-tooltip="Increases all party members max HP by 10% for 25s">C4</span>
+              <span class="hover-icon" data-tooltip="Grants 1 additional charge">C1</span>
+              <span class="hover-icon" data-tooltip="Each marked enemies hit by skill increases all party members' Max HP by 10% for 25s&#010;Max HP Bonus: 40%">C4</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
-              <p>Deals Hydro DMG to the marked opponents</p>
-              <p>Holding mode can control rapid movement and end it by using the skill again</p>
-              <p>Duration: 3s</p>
+              <p>Moves forward, marking enemies on contact, and deals Hydro DMG to marked enemies</p>
+              <p>Holding mode allows continuous rapid movement, marking multiple enemies on contact</p>
+              <li>Each enemies marked has a 34% chance to reset Breakthrough state</li>
+              <p>Hold mode Duration: 3s</p>
               <p>CD: 10s</p>
             </div>
           </div>
@@ -5415,17 +5417,17 @@
             <div class="grid-item">
               <img src="images/icons/yelan/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="Increases damage overtime">A4</span>
-              <span class="hover-icon" data-tooltip="Increases arrow damage max HP by 14%">C2</span>
+              <span class="hover-icon" data-tooltip="Increases DMG over time">A4</span>
+              <span class="hover-icon" data-tooltip="Burst deals additional coordinated attack dealing 14% of Yelan's Max HP">C2</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
-              <span class="hover-icon" data-tooltip="Charged attack dmg by 156% and mastermind state lasts 20s">C6</span>
+              <span class="hover-icon" data-tooltip="On Burst cast, Yelan's Normal Attack deals 156% of Breakthrough DMG for 20s&#010;Max attacks: 5">C6</span>
             </div>
             <div class="grid-text">
-              <p>Deals AoE Hydro DMG and creates an <b>Exquisite Throw</b></p>
+              <p>Deals AoE Hydro DMG and creates an <b>Exquisite Throw</b>, Dealing coordinated Hydro DMG based on Yelan's Max HP</p>
               <p><b>Exquisite Throw:</b></p>
-              <li>Deals Hydro DMG based on her max HP along with normal attack</li>
-              <li>Occurs each time her lifeline explodes</li>
-              
+              <li>Coordinated attacks alongside with Normal Attacks</li>
+              <li>Coordinated attacks on Skill mark hits</li>
+              <li>Works off-field</li>
               <p>Duration: 15s</p>
               <p>Energy Cost: 70</p>
               <p>CD: 18s</p>
@@ -5438,7 +5440,7 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>When the party has 1/2/3/4 Elemental Types, Yelan's Max HP is increased by 6%/12%/18%/30%.</p>
+              <p>Each Elemental Types in the party, Increases Yelan's Max HP by 6%/12%/18%/30%.</p>
             </div>
           </div>
 
@@ -5448,10 +5450,10 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>With active burst:</p>
+              <p>While Burst is active, grants the following effect to the active character:</p>
               <li>Increases deal 1% more damage</li>
-              <li>Increases damage by 3.5% per second, maxing at 50%</li>
-              <li>Recast Depth-Clarion Dice to cancel</li>
+              <li>Increases damage by 3.5% every 1s, maxing at 50%</li>
+              <li>Casting Burst again resets the DMG Bonus</li>
               <br>
             </div>
           </div>
