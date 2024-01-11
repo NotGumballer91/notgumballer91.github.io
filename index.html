@@ -1404,7 +1404,7 @@
     </div>
   </div>
 
-  <div class="accordion"><!--Eula (not done)-->
+  <div class="accordion"><!--Eula-->
     <div class="accordion-section">
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/Eula.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Eula</h2></button>
       <div class="accordion-content">
@@ -1412,12 +1412,11 @@
           
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/na1-5.png" draggable="false">
+              <img src="images/icons/na3.png" draggable="false">
               <h2>Normal Attack</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
             </div>
             <div class="grid-text">
-              <p>Performs X attacks</p>
+              <p>Performs 5 attacks</p>
             </div>
           </div>
 
@@ -1425,12 +1424,25 @@
             <div class="grid-item">
               <img src="images/icons/Eula/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="When consuming 2 Skill stacks, deals an attack instance of Physical DMG">A1</span>
+              <span class="hover-icon" data-tooltip="Increases Physical DMG by 30% for 6s for each Skill stack consumed &#010;Extra stacks consumed increases Buff Duration by 6s, up to 18s">C1</span>
+              <span class="hover-icon" data-tooltip="Hold Skill CD: 4s">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Skill text here</p>
-              <p>Duration: X</p>
-              <p>CD: X</p>
+              <p><b>Press:</b></p>
+              <li>Deals Cryo DMG</li>
+              <li>Gains <b>Grimheart</b> when hitting enemies</li>
+              <p><b>Grimheart:</b></p>
+              <li>Increases Interrupt Resistance and DEF</li>
+              <p><b>Hold:</b></p>
+              <li>Consumes Grimheart stacks to deal AoE Cryo DMG</li>
+              <li>When consuming Grimheart, decreases Physical and Cryo RES to enemies hit</li>
+              <li>Each Grimheart consumed deals an AoE Cryo DMG attack</li>
+              <p>Grimheart Duration: 18s</p>
+              <p>RES Shred Duration: 7s</p>
+              <p>Press CD: 4s</p>
+              <p>Hold CD: 10s</p>
             </div>
           </div>
 
@@ -1438,12 +1450,20 @@
             <div class="grid-item">
               <img src="images/icons/Eula/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="On Burst cast, gain Skill stack and refresh Skill CD">A4</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Increases Lightfall Sword DMG to enemies with 50% HP or higher">C4</span>
+              <span class="hover-icon" data-tooltip="Gain 5 stacks for Burst on cast &#010;Each Attack, Skill or Burst hit has 50% to gain extra Burst stack">C6</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Burst text here</p>
-              <p>Energy Cost: X</p>
-              <p>CD: X</p>
+              <p>Deals Cryo DMG and summons a <b>Lightfall Sword</b></p>
+              <p><b>Lightfall Sword:</b></p>
+              <li>Follows Eula</li>
+              <li>Gain a stack for each Attack, Skill or Burst that DMGs opponents</li>
+              <li>Explodes after 7s dealing Physical DMG</li>
+              <li>Each stack increases Explosion DMG (Max 30 stacks)</li>
+              <p>Energy Cost: 80</p>
+              <p>CD: 20s</p>
             </div>
           </div>
 
@@ -1453,7 +1473,8 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 1 text here</p>
+              <p>Deals another attack instance of Physical DMG when consuming 2 Grimheart stacks by using Hold Skill</p>
+              <br>
             </div>
           </div>
 
@@ -1463,7 +1484,10 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 4 text here</p>
+              <p>When Burst is cast:</p>
+              <li>Gain 1 Grimheart stack</li>
+              <li>Reset Skill CD</li>
+              <br>
             </div>
           </div>
 
@@ -1778,7 +1802,7 @@
 
   <div class="accordion"><!--Ganyu-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/Ganyu.webp); background-position: 50% 22%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Ganyu</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/ganyu.webp); background-position: 50% 22%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Ganyu</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
@@ -1805,7 +1829,7 @@
 
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/Ganyu/e.webp" draggable="false">
+              <img src="images/icons/ganyu/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
               <span class="hover-icon" data-tooltip="Skill gains 1 additional charge">C2</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
@@ -1823,7 +1847,7 @@
 
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/Ganyu/q.webp" draggable="false">
+              <img src="images/icons/ganyu/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
               <span class="hover-icon" data-tooltip="Increases Cryo DMG Bonus when inside Burst AoE">A4</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
@@ -1841,7 +1865,7 @@
 
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/Ganyu/a1.webp" draggable="false">
+              <img src="images/icons/ganyu/a1.webp" draggable="false">
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
@@ -1851,7 +1875,7 @@
 
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/Ganyu/a4.webp" draggable="false">
+              <img src="images/icons/ganyu/a4.webp" draggable="false">
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
