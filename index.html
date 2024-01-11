@@ -1406,7 +1406,7 @@
 
   <div class="accordion"><!--Eula-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/eula.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Eula</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/eula.webp); background-position: 50% 18%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Eula</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
@@ -1424,23 +1424,23 @@
             <div class="grid-item">
               <img src="images/icons/eula/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="When consuming 2 Skill stacks, deals an attack instance of Physical DMG">A1</span>
+              <span class="hover-icon" data-tooltip="When consuming 2 Skill stacks,&#010;Deals an additional attack instance of Physical DMG">A1</span>
               <span class="hover-icon" data-tooltip="Increases Physical DMG by 30% for 6s for each Skill stack consumed &#010;Extra stacks consumed increases Buff Duration by 6s, up to 18s">C1</span>
-              <span class="hover-icon" data-tooltip="Hold Skill CD: 4s">C2</span>
+              <span class="hover-icon" data-tooltip="Skill's Hold CD is now the same as Press CD">C2</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
               <p><b>Press:</b></p>
               <li>Deals Cryo DMG</li>
               <li>Gains <b>Grimheart</b> when hitting enemies</li>
-              <p><b>Grimheart:</b></p>
-              <li>Increases Interrupt Resistance and DEF</li>
               <p><b>Hold:</b></p>
               <li>Consumes Grimheart stacks to deal AoE Cryo DMG</li>
               <li>When consuming Grimheart, decreases Physical and Cryo RES to enemies hit</li>
-              <li>Each Grimheart consumed deals an AoE Cryo DMG attack</li>
-              <p>Grimheart Duration: 18s</p>
-              <p>RES Shred Duration: 7s</p>
+              <li>Each Grimheart consumed deals AoE Cryo DMG attack</li>
+              <p><b>Grimheart:</b></p>
+              <li>Increases Interrupt Resistance and DEF</li>
+              <li>RES Shred Duration: 7s</li>
+              <li>Duration: 18s</li>
               <p>Press CD: 4s</p>
               <p>Hold CD: 10s</p>
             </div>
@@ -1452,16 +1452,16 @@
               <h2>Elemental Burst</h2>
               <span class="hover-icon" data-tooltip="On Burst cast, gain Skill stack and refresh Skill CD">A4</span>
               <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
-              <span class="hover-icon" data-tooltip="Increases Lightfall Sword DMG to enemies with 50% HP or higher">C4</span>
-              <span class="hover-icon" data-tooltip="Gain 5 stacks for Burst on cast &#010;Each Attack, Skill or Burst hit has 50% chance to gain an extra Burst stack">C6</span>
+              <span class="hover-icon" data-tooltip="Increases Lightfall Sword DMG to enemies above 50% HP">C4</span>
+              <span class="hover-icon" data-tooltip="On Burst cast, gains 5 stacks&#010;Each Attack, Skill or Burst hit has 50% chance to gain a stack">C6</span>
             </div>
             <div class="grid-text">
-              <p>Deals Cryo DMG and summons a <b>Lightfall Sword</b></p>
+              <p>Deals Cryo DMG and summons a <b>Lightfall Sword</b>, exploding after 7s</p>
               <p><b>Lightfall Sword:</b></p>
               <li>Follows Eula</li>
-              <li>Gain a stack for each Attack, Skill or Burst that DMGs opponents</li>
-              <li>Explodes after 7s dealing Physical DMG</li>
+              <li>Gain a stack for each Normal Attack, Skill or Burst on hit</li>
               <li>Each stack increases Explosion DMG (Max 30 stacks)</li>
+              <li>Immediately explodes after switching character</li>
               <p>Energy Cost: 80</p>
               <p>CD: 20s</p>
             </div>
@@ -1483,10 +1483,7 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>When Burst is cast:</p>
-              <li>Gain 1 Grimheart stack</li>
-              <li>Reset Skill CD</li>
-              <br>
+              <p>On Burst cast, gain 1 Grimheart stack and resets Skill CD</p>
             </div>
           </div>
 
