@@ -2337,20 +2337,19 @@
     </div>
   </div>
 
-  <div class="accordion"><!--Kamisato Ayato (not done)-->
+  <div class="accordion"><!--Kamisato Ayato-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/ayato.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Kamisato Ayato</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/ayato.webp); background-position: 40% 18%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Kamisato Ayato</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/na1-5.png" draggable="false">
+              <img src="images/icons/na1.png" draggable="false">
               <h2>Normal Attack</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
             </div>
             <div class="grid-text">
-              <p>Performs X attacks</p>
+              <p>Performs 5 attacks</p>
             </div>
           </div>
 
@@ -2358,12 +2357,26 @@
             <div class="grid-item">
               <img src="images/icons/ayato/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Gain 2 Namisen stacks on Skill cast&#010;Gain max Namisen stacks when Water Illusion explodes">A1</span>
+              <span class="hover-icon" data-tooltip="Increases Shunsuiken DMG to enemies above 50% HP">C1</span>
+              <span class="hover-icon" data-tooltip="Namisen stacks increased to 5 &#010;When you have 3 Namisen stacks, Increases HP by 50%">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Deals 2 extra Shunsuiken slashes for every Shunsuiken slash with 45% of ATK&#010;These slashes are not affected by Namisen">C6</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Skill text here</p>
-              <p>Duration: X</p>
-              <p>CD: X</p>
+              <p>Dashes in a direction and enters <b>Takimeguri Kanka</b> state</p>
+              <p>After dashing, creates a <b>Water Illusion</b> from the dash location for 6s, which explodes when enemies are nearby or Takimeguri Kanka expires</p>
+              <p><b>Takimeguri Kanka:</b></p>
+              <li>Converts Normal Attacks into <b>Shunsuiken</b> slashes, dealing AoE Hydro DMG (14 slashes)</li>
+              <li>Grants <b>Namisen</b> stack for every <b>Shunsuiken</b> that hits enemies (every 0.1s)</li>
+              <li>Increases Interrupt Resistance</li>
+              <li>Unable to use Charged or Plunge Attacks</li>
+              <li>Exits state when switching characters</li>
+              <p><b>Namisen</b></p>
+              <li>Increases <b>Shunsuiken</b> DMG based on Max HP</li>
+              <li>Max 4 stacks</li>
+              <p>Takimeguri Kanka Duration: 6s</p>
+              <p>CD: 12s</p>
             </div>
           </div>
 
@@ -2371,12 +2384,16 @@
             <div class="grid-item">
               <img src="images/icons/ayato/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Gain 2 energy per 1s when not on the field and have less than 40 energy">A4</span>
+              <span class="hover-icon" data-tooltip="Increases Normal Attack SPD by 15% when inside Burst AoE">C4</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Burst text here</p>
-              <p>Energy Cost: X</p>
-              <p>CD: X</p>
+              <p>Creates an AoE that deals Hydro DMG to enemies inside</p>
+              <p>Increases Normal Attack DMG for active characters inside the AoE</p>
+              <p>Energy Cost: 80</p>
+              <p>Duration: 18s</p>
+              <p>CD: 20s</p>
             </div>
           </div>
 
@@ -2386,7 +2403,8 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 1 text here</p>
+              <p>When using Skill, gain 2 Namisen stacks</p>
+              <p>When Water Illusion created by Skill explodes, gain max Namisen stacks</p>
             </div>
           </div>
 
@@ -2396,7 +2414,7 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 4 text here</p>
+              <p>Regenerates 2 energy every 1s when Ayato is not on the field and has less than 40 energy.</p>
             </div>
           </div>
 
