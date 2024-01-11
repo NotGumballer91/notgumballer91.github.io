@@ -54,7 +54,7 @@ Diona
 
 **Dori (Added)**
 
-Eula
+**Eula (Added)**
 
 Faruzan
 
@@ -78,7 +78,7 @@ Kaeya
 
 **Kamisato Ayaka (Added)**
 
-Kamisato Ayato
+**Kamisato Ayato (Added)**
 
 Kaveh
 
@@ -162,7 +162,7 @@ Yanfei
 
 **Yaoyao (Added)**
 
-Yelan
+**Yelan (Added)**
 
 Yoimiya
 
