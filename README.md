@@ -1,4 +1,4 @@
-# [Genshin tl;dr](https://notgumballer91.github.io/)
+# [Genshin tl;dr](https://genshintldr.github.io/)
 Explaining Genshin character's kit as short as possible without Hoyoverse's long essay bloat
 
 ## How to save locally
