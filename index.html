@@ -3296,20 +3296,22 @@
     </div>
   </div>
 
-  <div class="accordion"><!--Nahida (not done)-->
+  <div class="accordion"><!--Nahida-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/nahida.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Nahida</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/nahida.webp); background-position: 50% 42%; background-repeat: no-repeat; background-size: auto, 1400px, auto;"><h2>Nahida</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/na1-5.png" draggable="false">
+              <img src="images/icons/na5.png" draggable="false">
               <h2>Normal Attack</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
             </div>
             <div class="grid-text">
-              <p>Performs X attacks</p>
+              <p>Performs 4 Dendro attacks</p>
+              <li>Normal attacks has a short fixed range</li>
+              <li>Charged attack has medium range</li>
+              <br>
             </div>
           </div>
 
@@ -3317,12 +3319,23 @@
             <div class="grid-item">
               <img src="images/icons/nahida/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Increases Skill's DMG amd Crit Rate based on Nahida's EM">A4</span>
+              <span class="hover-icon" data-tooltip="Allows Burning, Bloom, Burgeon and Hyperbloom to Crit&#010;Crit Rate/DMG: 20%/100%&#010;&#010;Additionally, Quicken, Aggravate and Spread decreases enemies DEF&#010;by 30% for 8s">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="1/2/3/4 (or more) enemies marked with skill increases Nahida's EM by 100/120/140/160">C4</span>
+              <span class="hover-icon" data-tooltip="On Burst cast, Marked enemies hit with Nahida's Normal/Charged Attacks&#010;takes 200% ATK + 400% EM as Dendro DMG every 0.2s&#010;Duration: 10s&#010;Total DMG instances: 6">C6</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Skill text here</p>
-              <p>Duration: X</p>
-              <p>CD: X</p>
+              <p>Marks enemies with <b>Seed of Skandha</b>, Dealing Dendro DMG to all marked enemies at intervals</p>
+              <p>Hold mode allows targetted marking</p>
+              <p><b>Seed of Skandha:</b></p>
+              <li>Deals Dendro DMG based on Nahida's ATK and EM</li>
+              <li>DMG procs when you trigger Elemental Reactions or Dendro Cores on marked enemies</li>
+              <li>Mark limit: 8 enemies</li>
+              <li>DMG Proc Interval: 2.5s</li>
+              <p>Duration: 25s</p>
+              <p>CD: 5s</p>
+              <p>Hold CD: 6s</p>
             </div>
           </div>
 
@@ -3330,12 +3343,21 @@
             <div class="grid-item">
               <img src="images/icons/nahida/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Highest EM team member grants 25% of their EM">A1</span>
+              <span class="hover-icon" data-tooltip="On Burst cast, Automatically adds 1 Elemental Type to the count">C1</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Burst text here</p>
-              <p>Energy Cost: X</p>
-              <p>CD: X</p>
+              <p>Deploys <b>Shrine of Maya</b>, Enhancing Nahida's Skill or Burst depending on the Team's Elemental Types</p>
+              <p><b>Shrine of Maya:</b></p>
+              <li>All enhancements applies only when Nahida is within Shrine of Maya</li>
+              <li>Multiple Elemental types enhances it further (Only up to 2)</li>
+              <li>Pyro: Increases Skill DMG</li>
+              <li>Electro: Decreases Skill DMG Interval</li>
+              <li>Hydro: Extends Burst Duration</li>
+              <p>Duration: 15s</p>
+              <p>Energy Cost: 50</p>
+              <p>CD: 13.5s</p>
             </div>
           </div>
 
@@ -3345,7 +3367,8 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 1 text here</p>
+              <p>Active characters within the Burst gains 25% of the highest EM in the team</p>
+              <p>Max EM bonus: 250EM</p>
             </div>
           </div>
 
@@ -3355,7 +3378,10 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 4 text here</p>
+              <p>Every EM beyond 200 grants the following to Nahida's Skill:</p>
+              <li>0.1% Bonus DMG (Max 80%/1000EM)</li>
+              <li>0.03% Crit Rate (Max 24%/1000EM)</li>
+              <br>
             </div>
           </div>
 
