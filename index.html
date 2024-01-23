@@ -1560,20 +1560,20 @@
     </div>
   </div>
 
-  <div class="accordion"><!--Fischl (not done)-->
+  <div class="accordion"><!--Fischl-->
     <div class="accordion-section">
-      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/fischl.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto, 1600px, auto;"><h2>Fischl</h2></button>
+      <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/fischl.webp); background-position: 50% 22%; background-repeat: no-repeat; background-size: auto, 1500px, auto;"><h2>Fischl</h2></button>
       <div class="accordion-content">
         <div class="grid-container">
           
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/na1-5.png" draggable="false">
+              <img src="images/icons/na2.png" draggable="false">
               <h2>Normal Attack</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Normal Attacks also fires coordinated attacks dealing 22% of Fischl's ATK">C1</span>
             </div>
             <div class="grid-text">
-              <p>Performs X attacks</p>
+              <p>Performs 5 attacks</p>
             </div>
           </div>
 
@@ -1581,12 +1581,20 @@
             <div class="grid-item">
               <img src="images/icons/fischl/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Hitting Oz with Charged-Shot deals additional AoE Electro DMG">A1</span>
+              <span class="hover-icon" data-tooltip="Triggering Electro-Charged reaction deals Electro DMG">A4</span>
+              <span class="hover-icon" data-tooltip="Increases Skill cast DMG by 200% of ATK&#010;Also increases AoE by 50% ">C2</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Extends Oz's duration by 2s&#010;Also fires coordinated attacks with the active character, Dealing 30% of Fischl's ATK as Electro DMG">C6</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Skill text here</p>
-              <p>Duration: X</p>
-              <p>CD: X</p>
+              <p>Summons <b>Oz</b>, Dealing Electro DMG at intervals</p>
+              <p>Holding mode allows aiming</p>
+              <p><b>Oz:</b></p>
+              <li>Attacks nearby enemies every 1s</li>
+              <li>Can be redeployed (CD: 2s)</li>
+              <p>Duration: 10s</p>
+              <p>CD: 25s</p>
             </div>
           </div>
 
@@ -1594,12 +1602,18 @@
             <div class="grid-item">
               <img src="images/icons/fischl/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="On cast, Deals Electro DMG 222% of Fischl's ATK to nearby enemies&#010;When duration ends, Heals 20% of Fischl's HP">C4</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Burst text here</p>
-              <p>Energy Cost: X</p>
-              <p>CD: X</p>
+              <p>Takes Oz's form, Dealing Electro DMG to enemies on contact</p>
+              <li>Increased Movement SPD and continuously moves forward</li>
+              <li>Increased Interrupt Resistance</li>
+              <li>Summons Oz at the end of the duration</li>
+              <li>Refreshes Oz's duration if Oz was present during cast</li>
+              <li>Cancelling by switching characters during Burst summons Oz regardless</li>
+              <p>Energy Cost: 60</p>
+              <p>CD: 15s</p>
             </div>
           </div>
 
@@ -1609,7 +1623,7 @@
               <h2>Ascension Passive 1</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 1 text here</p>
+              <p>Hitting Oz with a Charged-Shot deals 152.7% of arrow's DMG as AoE Electro DMG to nearby enemies</p>
             </div>
           </div>
 
@@ -1619,7 +1633,8 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 4 text here</p>
+              <p>While Oz is present, Triggering <b style=color:#FFACFF>Electro-Reactions</b> additionally deals AoE Electro DMG 80% of Fischl's ATK</p>
+              <p>CD: 0.5s</p>
             </div>
           </div>
 
@@ -3493,7 +3508,7 @@
               <span class="hover-icon" data-tooltip="Each Hydro-Reactions increases Charged Attack DMG">A1</span>
               <span class="hover-icon" data-tooltip="Increases Interrupt Resistance during Charge Attack&#010;Also gains 1 stack from A1">C1</span>
               <span class="hover-icon" data-tooltip="Each stack from A1 increases Charged Attack's Crit DMG by 14%">C2</span>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 1">C3</span>
               <span class="hover-icon" data-tooltip="When healed, Creates 1 Water Droplet (CD: 4s)">C4</span>
               <span class="hover-icon" data-tooltip="Charged Attack passively consumes nearby Water Droplets&#010;Each Water Droplet extends the duration by 1s&#010;Also fires off 2 Hydro currents, dealing 10% of Max HP every 2s">C6</span>
             </div>
