@@ -2491,7 +2491,7 @@
     </div>
   </div>
 
-  <div class="accordion"><!--Keqing (not done)-->
+  <div class="accordion"><!--Keqing-->
     <div class="accordion-section">
       <button class="accordion-title" onclick="toggleAccordion(this)" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/keqing.webp); background-position: 50% 25%; background-repeat: no-repeat; background-size: auto, 1500px, auto;"><h2>Keqing</h2></button>
       <div class="accordion-content">
@@ -2499,12 +2499,16 @@
           
           <div class="grid-group">
             <div class="grid-item">
-              <img src="images/icons/na1-5.png" draggable="false">
+              <img src="images/icons/na1.png" draggable="false">
               <h2>Normal Attack</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Recasting skill grants Electro Infusion">A1</span>
+              <span class="hover-icon" data-tooltip="Enemies with Electro hit by Normal/Charged Attack has a 50% to generate Elemental Particle&#010;CD: 5s">C2</span>
+              <span class="hover-icon" data-tooltip="Keqing triggering Electro-Reactions increases her ATK by 25%&#010;Duration: 10s">C4</span>
             </div>
             <div class="grid-text">
-              <p>Performs X attacks</p>
+              <p>Performs 5 attacks</p>
+              <li>5th attack has a brief teleportation</li>
+              <br>
             </div>
           </div>
 
@@ -2512,12 +2516,18 @@
             <div class="grid-item">
               <img src="images/icons/keqing/e.webp" draggable="false">
               <h2>Elemental Skill</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="Recasting skill deals 50% of Keqing ATK as Electro DMG at both points">C1</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C5</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Skill text here</p>
-              <p>Duration: X</p>
-              <p>CD: X</p>
+              <p>Casts <b>Lightning Stiletto</b> a certain distance</p>
+              <p>Holding mode allows aimed cast</p>
+              <p><b>Lightning Stiletto:</b></p>
+              <li>Deals Electro DMG at traversal</li>
+              <li>Charged Attack consumes the Stiletto, Dealing AoE Electro DMG</li>
+              <li>Recasting skill blinks Keqing at the location, Dealing AoE Electro DMG</li>
+              <li>Stiletto Duration: 5s</li>
+              <p>CD: 7.5s</p>
             </div>
           </div>
 
@@ -2525,12 +2535,14 @@
             <div class="grid-item">
               <img src="images/icons/keqing/q.webp" draggable="false">
               <h2>Elemental Burst</h2>
-              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C#</span>
+              <span class="hover-icon" data-tooltip="On cast, Increases Crit Rate and Energy Recharge">A4</span>
+              <span class="hover-icon" data-tooltip="Increases Talent Level by 3">C3</span>
             </div>
             <div class="grid-text">
-              <p>Elemental Burst text here</p>
-              <p>Energy Cost: X</p>
-              <p>CD: X</p>
+              <p>Deals multiple instances of Electro DMG in a large AoE. Last instance deals massive AoE Electro DMG</p>
+              <li>Has 8 instances</li>
+              <p>Energy Cost: 40</p>
+              <p>CD: 12s</p>
             </div>
           </div>
 
@@ -2538,9 +2550,10 @@
             <div class="grid-item">
               <img src="images/icons/keqing/a1.webp" draggable="false">
               <h2>Ascension Passive 1</h2>
+              <span class="hover-icon" data-tooltip="Each Normal Attack, Charged Attack, Skill and Burst increases Electro DMG by 6%&#010;All Electro DMG Bonus durations are counted indepedently&#010;Duration: 8s">C6</span>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 1 text here</p>
+              <p>Recasting skill grants Keqing Electro Infusion for 5s</p>
             </div>
           </div>
 
@@ -2550,7 +2563,8 @@
               <h2>Ascension Passive 4</h2>
             </div>
             <div class="grid-text">
-              <p>Ascension Passive 4 text here</p>
+              <p>On Burst cast, Increases Crit Rate and Energy Recharge by 15%</p>
+              <p>Duration: 8s</p>
             </div>
           </div>
 
